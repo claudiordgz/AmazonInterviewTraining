@@ -1,5 +1,0 @@
-Import('env', 'include_path')
-
-for subdir in ['algorithms', 'basic_adt', 'graphs', 'sorting', 'traversal', 'trees', 'tries']:
-    env.SConscript('%s/SConscript' % subdir, exports=['env', 'include_path'])
-
