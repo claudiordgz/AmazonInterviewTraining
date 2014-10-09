@@ -1,6 +1,16 @@
-Import('env', 'include_path')
+Import('env', 'include_path', 'libs_path')
 # toolkit.h is located in this directory, add it to the include path
 lEnv = env.Clone()
 lEnv.Append(CPPPATH=include_path)
+
+includeLibs = ['sortingLib']
+libsPaths = list()
+for lib in includeLibs:
+	newLib = '{libpath}/{lib}'.format(libpath=libs_path, lib=lib)
+	print("Libpath > Added Lib >> " + newLib)
+	libsPaths.append(newLib)
+lEnv.Append(LIBPATH=libsPaths)
+lEnv.Append(LIBS=includeLibs)
+
 # Let's declare a library named toolkit, using toolkit.c as its only source
 lEnv.Program('Sorting', ['main.cpp'])

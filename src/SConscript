@@ -1,5 +1,13 @@
-Import('env', 'include_path')
+Import('env', 'include_path', 'libs_path')
 
-for subdir in ['algorithms', 'basic_adt', 'graphs', 'sorting', 'traversal', 'trees', 'tries']:
-    env.SConscript('%s/SConscript' % subdir, exports=['env', 'include_path'])
+projects = ['algorithms', 'basicAdt', 'graphs', 'sorting', 'traversal', 'trees', 'tries']
+
+for subdir in projects:
+	print("Building> "+ subdir + "Lib")
+	folderName = '{subdir}Lib'.format(subdir=subdir)
+	env.SConscript('{folderName}/SConscript'.format(folderName=folderName), exports=['env', 'include_path'])
+
+for subdir in projects:
+	print("Building> "+ subdir)
+	env.SConscript('{folderName}/SConscript'.format(folderName=subdir), exports=['env', 'include_path','libs_path'])
 

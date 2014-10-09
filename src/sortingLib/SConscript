@@ -3,4 +3,4 @@ Import('env', 'include_path')
 lEnv = env.Clone()
 lEnv.Append(CPPPATH=include_path)
 # Let's declare a library named toolkit, using toolkit.c as its only source
-lEnv.Program('BasicADT', ['main.cpp'])
+lEnv.StaticLibrary('sortingLib', ['sorting.cpp'])

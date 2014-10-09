@@ -2,6 +2,7 @@
 project_name = 'CPPExpressionParser' 
 project_src = 'src'
 include_path='E:\Claudio\VisualStudio\CrossPlatform\AmazonInterviewTraining\include'
+libs_path='E:\Claudio\VisualStudio\CrossPlatform\AmazonInterviewTraining\\build\debug'
 common_env = Environment()
 common_env.Append(CPPDEFINES={'VERSION': 1})
 isWindows =  "win" in common_env['PLATFORM']
@@ -16,6 +17,6 @@ debug_env.VariantDir('build/debug', project_src)
 # Now that all build environment have been defined, let's iterate over
 # them and invoke the lower level SConscript files.
 for mode, env in dict(debug=debug_env).iteritems():
-    env.SConscript('build/%s/SConscript' % mode, exports=['env', 'include_path'])
+    env.SConscript('build/%s/SConscript' % mode, exports=['env', 'include_path', 'libs_path'])
 
 
