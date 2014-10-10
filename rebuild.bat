@@ -1,7 +1,8 @@
 @echo off 
 setlocal enableDelayedExpansion 
 
-rmdir "%CD%\build\debug" /s /q 
+start /wait /B scons -c
 
-set SCONS_MSCOMMON_DEBUG=-
+:: set SCONS_MSCOMMON_DEBUG=-
+
 start /wait /B scons
