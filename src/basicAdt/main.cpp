@@ -7,23 +7,25 @@
 
 using basicAdt::AllUnique;
 using basicAdt::Reverse;
+using basicAdt::RemoveDuplicate;
+using basicAdt::IsPermutation;
 
 BOOST_AUTO_TEST_SUITE(BasicAbstractDataTypes_suite)
 
 BOOST_AUTO_TEST_CASE( string_all_unique_test_true )
 {
-  std::string murcielago("murcielago");
-  BOOST_CHECK(AllUnique(murcielago));
-  std::string abc("abcdefghijklmnoprstuvwxyz");
-  BOOST_CHECK(AllUnique(abc));
+	std::string murcielago("murcielago");
+	BOOST_CHECK(AllUnique(murcielago));
+	std::string abc("abcdefghijklmnoprstuvwxyz");
+	BOOST_CHECK(AllUnique(abc));
 }
 
 BOOST_AUTO_TEST_CASE( string_all_unique_test_false )
 {
-  std::string pepe("pepe");
-  BOOST_CHECK(!AllUnique(pepe));
-  std::string onomatopeya("onomatopeya");
-  BOOST_CHECK(!AllUnique(onomatopeya));
+  	std::string pepe("pepe");
+	BOOST_CHECK(!AllUnique(pepe));
+	std::string onomatopeya("onomatopeya");
+	BOOST_CHECK(!AllUnique(onomatopeya));
 }
 
 BOOST_AUTO_TEST_CASE( string_reverse )
@@ -41,6 +43,27 @@ BOOST_AUTO_TEST_CASE( string_reverse_long_string )
 	Reverse(paranga);
 	std::string result("oraucimiritucagnaraP");
 	BOOST_CHECK(!result.compare(paranga));
+}
+
+BOOST_AUTO_TEST_CASE( string_remove_duplicate )
+{
+	std::string onomatopeya("onomatopeya");
+	RemoveDuplicate(onomatopeya);
+	BOOST_CHECK(!onomatopeya.compare("onmatpey"));
+}
+
+BOOST_AUTO_TEST_CASE( string_remove_duplicate_long )
+{
+	std::string longest_word_maybe("pneumonoultramicroscopicsilicovolcanoconiosis");
+	RemoveDuplicate(longest_word_maybe);
+	BOOST_CHECK(!longest_word_maybe.compare("pneumoltraicsv"));
+}
+
+BOOST_AUTO_TEST_CASE( permutation_small )
+{
+	std::string word("Parangacutirimicuaro");
+	std::string permutation("oraucimiritucagnaraP");
+	BOOST_CHECK(IsPermutation(word, permutation));
 }
 
 BOOST_AUTO_TEST_SUITE_END()

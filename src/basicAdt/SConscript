@@ -1,8 +1,6 @@
 Import('env', 'include_path', 'libs_path','extraLibPaths', 'commonLibs','commonDefines','commonCFlags','commonLFlags')
 # toolkit.h is located in this directory, add it to the include path
 lEnv = env.Clone()
-lEnv.Append(CPPPATH=include_path)
-
 includeLibs = ['basicAdtLib']
 libsPaths = list()
 for lib in includeLibs:
@@ -11,6 +9,8 @@ for lib in includeLibs:
 	libsPaths.append(newLib)
 libsPaths.extend(extraLibPaths)
 includeLibs.extend(commonLibs)
+
+lEnv.Append(CPPPATH=include_path)
 lEnv.Append(LIBPATH=libsPaths)
 lEnv.Append(LIBS=includeLibs)
 lEnv.Append(CPPDEFINES=commonDefines)

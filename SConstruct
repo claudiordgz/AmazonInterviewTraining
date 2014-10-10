@@ -2,9 +2,9 @@
 project_name = 'CPPExpressionParser' 
 project_src = 'src'
 
-buildType='release'
+buildType='debug'
 include_path=['E:\\Claudio\\VisualStudio\\CrossPlatform\\AmazonInterviewTraining\\include','E:\\Boost_1_55\\include\\boost-1_55']
-libs_path='E:\\Claudio\\VisualStudio\\CrossPlatform\\AmazonInterviewTraining\\build\\debug'
+libs_path='E:\\Claudio\\VisualStudio\\CrossPlatform\\AmazonInterviewTraining\\build\\{build_type}'.format(build_type=buildType)
 extraLibPaths=['E:\\Boost_1_55\\lib']
 commonLibs=[] 
 commonDefines=['DEBUG']
@@ -21,7 +21,7 @@ common_env.Append(CPPDEFINES={'VERSION': 1})
     
 # We define our debug build environment in a similar fashion...
 debug_env = common_env.Clone()
-debug_env.VariantDir('build/debug', project_src)
+debug_env.VariantDir('build/{build_type}'.format(build_type=buildType), project_src)
 
 # Now that all build environment have been defined, let's iterate over
 # them and invoke the lower level SConscript files.
