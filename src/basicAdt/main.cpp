@@ -11,6 +11,7 @@ using basicAdt::RemoveDuplicate;
 using basicAdt::IsPermutation;
 using basicAdt::encodeSpacesStringNoFindNoInsert;
 using basicAdt::encodeSpacesStringFind;
+using basicAdt::compressWord;
 
 	
 BOOST_AUTO_TEST_SUITE(BasicAbstractDataTypes_suite)
@@ -91,5 +92,14 @@ BOOST_AUTO_TEST_CASE( replace_spaces_string_find )
 	encodeSpacesStringFind(word);
 	BOOST_CHECK(!word.compare(changed));
 }
+
+BOOST_AUTO_TEST_CASE( compress_word )
+{
+	std::string word("aabcccccaaa");
+	std::string changed("a2b1c5a3");
+	std::string result = compressWord(word);
+	BOOST_CHECK(!result.compare(changed));
+}
+
 
 BOOST_AUTO_TEST_SUITE_END()

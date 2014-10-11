@@ -51,6 +51,12 @@ bool IsPermutation(std::string const &lhs, std::string const &rhs);
 void encodeSpacesStringNoFindNoInsert(std::string &rhs);
 void encodeSpacesStringFind(std::string &rhs);
 
+/*! Implement a method to perform basic string compression using the counts
+ * of repeated characters. For example, the string aabcccccaaa would become
+ * a2blc5a3. If the "compressed" string would not become smaller than the orig-
+ * inal string, your method should return the original string.
+ */
+std::string compressWord(std::string const &rhs);
 }
 
 #endif

@@ -1,5 +1,6 @@
 #include <Training/basicAdt/stringOperations.hpp>
 #include <vector>
+#include <sstream>
 
 
 
@@ -149,6 +150,32 @@ void encodeSpacesStringFind(std::string &rhs) {
   for (size_t pos = rhs.find(' '); pos != std::string::npos; pos = rhs.find(' ', pos))
   {
     rhs.replace(pos, 1, "%20");
+  }
+}
+
+std::string compressWord(std::string const &rhs) {
+  auto it = rhs.begin();
+  auto pastEl = *it;
+  std::advance(it, 1);
+  std::stringstream finalAssembly;
+  int count = 1;
+  for (; it != rhs.end(); ++it) {
+    if (pastEl == *it){
+      count += 1;
+    }
+    else {
+      finalAssembly << pastEl << count;
+      count = 1;
+      pastEl = *it;
+    }
+  }
+  finalAssembly << pastEl << count;
+  std::string result = finalAssembly.str();
+  if (rhs.size() <= result.size()) {
+    return rhs;
+  }
+  else {
+    return result;
   }
 }
 

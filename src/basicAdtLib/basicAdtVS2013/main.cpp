@@ -11,6 +11,7 @@ int main() {
   using basicAdt::IsPermutation;
   using basicAdt::encodeSpacesStringNoFindNoInsert;
   using basicAdt::encodeSpacesStringFind;
+  using basicAdt::compressWord;
 
 	/*std::string word("parangacutirimicuaro");
 	std::string permutation("oraucimiritucagnarap");
@@ -23,9 +24,10 @@ int main() {
 
 	word = "ooooooooooaaaaooooooooooooooooooaaaaooooooooooooooooooaaaaooooooooooooooooooaaaaooooooooooooooooooaaaaooooooooooooooooooaaaaooooooooooooooooooaaaaooooooooooooooooooaaaaooooooooooooooooooaaaaooooooooooooooooooaaaaooooooooooooooooooaaaaoooooooo";
 	permutation = "ooaooooaooooaooooaooooooaooooaooooaooooaooooooaooooaooooaooooaooooooaooooaooooaooooaooooooaooooaooooaooooaooooooaooooaooooaooooaooooooaooooaooooaooooaooooooaooooaooooaooooaooooooaooooaooooaooooaooooooaooooaooooaooooaooooooaooooaooooaooooaoooo";
-	IsPermutation(word, permutation);*/
+	IsPermutation(word, permutation);
 
   encodeSpacesStringNoFindNoInsert(std::string("Mr   John Smith    "));
-  encodeSpacesStringFind(std::string("Mr   John Smith    "));
+  encodeSpacesStringFind(std::string("Mr   John Smith    "));*/
+  std::string test = compressWord(std::string("aabcccccaaa"));
 	return 0;
 }
