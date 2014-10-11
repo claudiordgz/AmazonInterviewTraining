@@ -9,7 +9,10 @@ using basicAdt::AllUnique;
 using basicAdt::Reverse;
 using basicAdt::RemoveDuplicate;
 using basicAdt::IsPermutation;
+using basicAdt::encodeSpacesStringNoFindNoInsert;
+using basicAdt::encodeSpacesStringFind;
 
+	
 BOOST_AUTO_TEST_SUITE(BasicAbstractDataTypes_suite)
 
 BOOST_AUTO_TEST_CASE( string_all_unique_test_true )
@@ -64,6 +67,29 @@ BOOST_AUTO_TEST_CASE( permutation_small )
 	std::string word("Parangacutirimicuaro");
 	std::string permutation("oraucimiritucagnaraP");
 	BOOST_CHECK(IsPermutation(word, permutation));
+}
+
+BOOST_AUTO_TEST_CASE( permutation_long_repeated_characters )
+{
+	std::string word("ooooooooooaaaaooooooooooooooooooaaaaooooooooooooooooooaaaaooooooooooooooooooaaaaooooooooooooooooooaaaaooooooooooooooooooaaaaooooooooooooooooooaaaaooooooooooooooooooaaaaooooooooooooooooooaaaaooooooooooooooooooaaaaooooooooooooooooooaaaaoooooooo");
+	std::string permutation("ooaooooaooooaooooaooooooaooooaooooaooooaooooooaooooaooooaooooaooooooaooooaooooaooooaooooooaooooaooooaooooaooooooaooooaooooaooooaooooooaooooaooooaooooaooooooaooooaooooaooooaooooooaooooaooooaooooaooooooaooooaooooaooooaooooooaooooaooooaooooaoooo");
+	BOOST_CHECK(IsPermutation(word, permutation));
+}
+
+BOOST_AUTO_TEST_CASE( replace_spaces_string_no_find )
+{
+	std::string word("Mr   John Smith    ");
+	std::string changed("Mr%20%20%20John%20Smith");
+	encodeSpacesStringNoFindNoInsert(word);
+	BOOST_CHECK(!word.compare(changed));
+}
+
+BOOST_AUTO_TEST_CASE( replace_spaces_string_find )
+{
+	std::string word("Mr   John Smith    ");
+	std::string changed("Mr%20%20%20John%20Smith");
+	encodeSpacesStringFind(word);
+	BOOST_CHECK(!word.compare(changed));
 }
 
 BOOST_AUTO_TEST_SUITE_END()

@@ -85,12 +85,12 @@ void PushOffsetIntoContainer(std::vector<int> &bit_container, char const &elemen
   offset_ = 1 << offset_;
   for(auto it = bit_container.begin(); it != bit_container.end(); ++it) {
     if(*it & offset_) {
-		if (std::distance(it, bit_container.end()) == 1) {
-		  int pushIt = std::distance(bit_container.begin(), it);
-		  bit_container.push_back(0);
-		  it = bit_container.begin();
-		  std::advance(bit_container.begin(), pushIt);
-		}
+		  if (std::distance(it, bit_container.end()) == 1) {
+		    int pushIt = std::distance(bit_container.begin(), it);
+		    bit_container.push_back(0);
+		    it = bit_container.begin();
+		    std::advance(bit_container.begin(), pushIt);
+		  }
     } else {
       *it = *it | offset_;  
       break;
