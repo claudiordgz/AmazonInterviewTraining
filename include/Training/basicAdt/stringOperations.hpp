@@ -3,7 +3,19 @@
 
 #include <string>
 
-using std::string;
+#include <boost/tuple/tuple.hpp>
+#include <boost/iterator/zip_iterator.hpp>
+#include <boost/range/iterator_range.hpp>
+
+template<class... Conts>
+auto zip_range(Conts&... conts)
+  -> decltype(boost::make_iterator_range(
+  boost::make_zip_iterator(boost::make_tuple(conts.begin()...)),
+  boost::make_zip_iterator(boost::make_tuple(conts.end()...))))
+{
+  return {boost::make_zip_iterator(boost::make_tuple(conts.begin()...)),
+          boost::make_zip_iterator(boost::make_tuple(conts.end()...))};
+}
 
 namespace basicAdt {
 
@@ -12,7 +24,7 @@ namespace basicAdt {
  *  has all unique characters. What if you can not use
  *  additional data structures
  */
-bool AllUnique(string const &rhs);
+bool AllUnique(std::string const &rhs);
 
 
 /*!
