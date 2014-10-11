@@ -6,9 +6,11 @@ using basicAdt::AllUnique;
 using basicAdt::Reverse;
 using basicAdt::RemoveDuplicate;
 using basicAdt::IsPermutation;
+using basicAdt::encodeSpacesStringNoFindNoInsert;
+using basicAdt::encodeSpacesStringFind;
 
 int main() {
-	std::string word("parangacutirimicuaro");
+	/*std::string word("parangacutirimicuaro");
 	std::string permutation("oraucimiritucagnarap");
 	IsPermutation(word, permutation);
 
@@ -19,7 +21,9 @@ int main() {
 
 	word = "ooooooooooaaaaooooooooooooooooooaaaaooooooooooooooooooaaaaooooooooooooooooooaaaaooooooooooooooooooaaaaooooooooooooooooooaaaaooooooooooooooooooaaaaooooooooooooooooooaaaaooooooooooooooooooaaaaooooooooooooooooooaaaaooooooooooooooooooaaaaoooooooo";
 	permutation = "ooaooooaooooaooooaooooooaooooaooooaooooaooooooaooooaooooaooooaooooooaooooaooooaooooaooooooaooooaooooaooooaooooooaooooaooooaooooaooooooaooooaooooaooooaooooooaooooaooooaooooaooooooaooooaooooaooooaooooooaooooaooooaooooaooooooaooooaooooaooooaoooo";
-	IsPermutation(word, permutation);
+	IsPermutation(word, permutation);*/
 
+  encodeSpacesStringNoFindNoInsert(std::string("Mr   John Smith    "));
+  encodeSpacesStringFind(std::string("Mr   John Smith    "));
 	return 0;
 }

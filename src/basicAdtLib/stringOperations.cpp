@@ -63,13 +63,13 @@ bool IsPermutation(std::string const &lhs, std::string const &rhs)
   if(lhs.size() == rhs.size()) {
     std::vector<int> flag_lhs { 0 };
     std::vector<int> flag_rhs { 0 };
-    for(std::size_t i=0; i != lhs.size(); ++i) {
-      PushOffsetIntoContainer(flag_lhs, lhs.at(i));
-      PushOffsetIntoContainer(flag_rhs, rhs.at(i));
+    for(auto&& str : zip_range(lhs, rhs)) {
+		PushOffsetIntoContainer(flag_lhs, str.get<0>());
+		PushOffsetIntoContainer(flag_rhs, str.get<1>());
     }
     if(flag_rhs.size() == flag_lhs.size()) {
-      for(auto&& t : zip_range(flag_lhs, flag_rhs)) {
-        if(t.get<0>() == t.get<1>()) {
+      for(auto&& bitContainer : zip_range(flag_lhs, flag_rhs)) {
+		  if (bitContainer.get<0>() == bitContainer.get<1>()) {
           returnVal = true;
         } else {
           returnVal = false;
@@ -93,8 +93,62 @@ void PushOffsetIntoContainer(std::vector<int> &bit_container, char const &elemen
 		}
     } else {
       *it = *it | offset_;  
-	  break;
+      break;
     }
+  }
+}
+
+
+void encodeSpacesStringNoFindNoInsert(std::string &rhs) {
+  std::string::iterator spaceFound = rhs.end();
+	for (auto it = rhs.begin(); it != rhs.end(); ++it) {
+    if (*it == ' ') {
+      if (spaceFound == rhs.end()){
+        spaceFound = it;
+      }
+    }
+    else {
+      if (spaceFound != rhs.end()) {
+        auto spaceEnd = it;
+        std::string middleSequence;
+        for (auto innerItr = spaceFound; innerItr != spaceEnd; ++innerItr) {
+          middleSequence.append("%20");
+        }
+        auto SequenceBegin = std::distance(rhs.begin(), spaceFound);
+        auto SequenceEnd = std::distance(rhs.begin(), spaceEnd);
+        std::string sequence(rhs.begin(), rhs.begin() + SequenceBegin);
+        sequence.append(middleSequence);
+        sequence.append(rhs.begin() + SequenceEnd, rhs.end());
+        rhs = sequence;
+        it = rhs.begin() + SequenceEnd;
+        spaceFound = rhs.end();
+      }
+    }
+	}
+  if (spaceFound != rhs.end()){
+    rhs.assign(rhs.begin(), spaceFound);
+  }
+}
+
+void encodeSpacesStringFind(std::string &rhs) {
+  std::string::iterator spaceFound = rhs.end();
+  std::string::iterator finishSpaces;
+  bool changed = false;
+  for (auto it = rhs.end()-1; it != rhs.begin(); --it) {
+    if (*it == ' ') {
+      if (spaceFound == rhs.end()){
+        spaceFound = it;
+      }
+    }
+    else {
+      finishSpaces = ++it;
+      break;
+    }
+  }
+  rhs.assign(rhs.begin(), finishSpaces);
+  for (size_t pos = rhs.find(' '); pos != std::string::npos; pos = rhs.find(' ', pos))
+  {
+    rhs.replace(pos, 1, "%20");
   }
 }
 
