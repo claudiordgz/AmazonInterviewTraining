@@ -6,4 +6,4 @@ lEnv.Append(CPPDEFINES=commonDefines)
 lEnv.Append(CCFLAGS=commonCFlags)
 lEnv.Append(LINKFLAGS=commonLFlags)
 # Let's declare a library named toolkit, using toolkit.c as its only source
-lEnv.StaticLibrary('basicAdtLib', ['basicAdt.cpp','stringOperations.cpp'])
+lEnv.StaticLibrary('basicAdtLib', ['basicAdt.cpp','stringOperations.cpp', 'matrixOperations.cpp'])

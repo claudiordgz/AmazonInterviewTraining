@@ -15,6 +15,8 @@ int main() {
   using basicAdt::encodeSpacesStringFind;
   using basicAdt::compressWord;
   using basicAdt::Rotate;
+  using basicAdt::ClearRowsColumns;
+
 
 	/*std::string word("parangacutirimicuaro");
 	std::string permutation("oraucimiritucagnarap");
@@ -31,7 +33,7 @@ int main() {
 
   encodeSpacesStringNoFindNoInsert(std::string("Mr   John Smith    "));
   encodeSpacesStringFind(std::string("Mr   John Smith    "));
-  std::string test = compressWord(std::string("aabcccccaaa"));*/
+  std::string test = compressWord(std::string("aabcccccaaa"));
   
   std::vector< std::vector<int> > intMatrix {
       { 1, 2, 3, 4 },
@@ -64,9 +66,41 @@ int main() {
   Rotate<basicAdt::CCW, std::string> rotateStringCClockwise(stringMatrix);
  
 
-  
+  */
 
-  
+  std::vector< std::vector<int> > squareMatrix{
+      { 1, 2, 3, 4 },
+      { 5, 0, 7, 8 },
+      { 9, 10, 0, 12 },
+      { 13, 14, 15, 16 }
+  };
+  ClearRowsColumns clear(squareMatrix);
 
-	return 0;
+  for (int i = 0; i != squareMatrix.size(); ++i)
+  {
+    for (int j = 0; j != squareMatrix[i].size(); ++j)
+    {
+      std::cout << squareMatrix[i][j] << ' ';
+    }
+    std::cout << std::endl;
+  }
+
+  std::vector< std::vector<int> > intMatrix{
+      { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 0, 12, 13, 14, 15, 16 },
+      { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 0, 12, 13, 14, 15, 16 },
+      { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 0, 12, 13, 14, 15, 16 },
+      { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1, 12, 13, 14, 15, 16 },
+      { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1, 12, 13, 14, 15, 16 },
+      { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1, 12, 13, 14, 15, 16 }
+  };
+  ClearRowsColumns clear2(intMatrix);
+  for (int i = 0; i != intMatrix.size(); ++i)
+  {
+    for (int j = 0; j != intMatrix[i].size(); ++j)
+    {
+      std::cout << intMatrix[i][j] << ' ';
+    }
+    std::cout << std::endl;
+  }
+  return 0;
 }
