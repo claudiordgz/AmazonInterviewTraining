@@ -4,6 +4,7 @@
 
 #include <Training/basicAdt/basicAdt.hpp>
 #include <Training/basicAdt/stringOperations.hpp>
+#include <Training/basicAdt/matrixOperations.hpp>
 
 using basicAdt::AllUnique;
 using basicAdt::Reverse;
@@ -12,6 +13,18 @@ using basicAdt::IsPermutation;
 using basicAdt::encodeSpacesStringNoFindNoInsert;
 using basicAdt::encodeSpacesStringFind;
 using basicAdt::compressWord;
+using basicAdt::Rotate;
+using basicAdt::CW;
+using basicAdt::CCW;
+
+template<class T>
+void CheckMatrices(T const &matrixOne, T const &matrixTwo) {
+	for(int i=0; i != matrixOne.size(); ++i){
+  	for(int j=0; j != matrixOne.size(); ++j){
+  		BOOST_CHECK(matrixOne[i][j] == matrixTwo[i][j]);
+  	}
+  }
+}
 
 	
 BOOST_AUTO_TEST_SUITE(BasicAbstractDataTypes_suite)
@@ -101,5 +114,29 @@ BOOST_AUTO_TEST_CASE( compress_word )
 	BOOST_CHECK(!result.compare(changed));
 }
 
+BOOST_AUTO_TEST_CASE( check_integer_matrix_rotation )
+{
+  std::vector< std::vector<int> > intMatrix { { 1, 2, 3, 4 }, { 5, 6, 7, 8 }, { 9, 10, 11, 12 }, { 13, 14, 15, 16 } };
+  std::vector< std::vector<int> > resultsOne { { 13, 9, 5, 1 }, { 14, 10, 6, 2 }, { 15, 11, 7, 3 }, { 16, 12, 8, 4 } };
+  std::vector< std::vector<int> > resultsTwo { { 1, 2, 3, 4 }, { 5, 6, 7, 8 }, { 9, 10, 11, 12 }, { 13, 14, 15, 16 } };
+
+  Rotate<basicAdt::CW, int> rotateIntClockwise(intMatrix);
+  CheckMatrices(intMatrix, resultsOne);
+
+  Rotate<basicAdt::CCW, int> rotateIntCClockwise(intMatrix);
+  CheckMatrices(intMatrix, resultsTwo);
+}
+
+BOOST_AUTO_TEST_CASE( check_string_matrix_rotation )
+{
+  std::vector< std::vector<std::string> > stringMatrix{ { "1", "2", "3", "4" }, { "5", "6", "7", "8" }, { "9", "10", "11", "12" }, { "13", "14", "15", "16" } };
+  std::vector< std::vector<std::string> > resultsOne { { "13", "9", "5", "1" }, { "14", "10", "6", "2" }, { "15", "11", "7", "3" }, { "16", "12", "8", "4" } };
+  std::vector< std::vector<std::string> > resultsTwo { { "1", "2", "3", "4" }, { "5", "6", "7", "8" }, { "9", "10", "11", "12" }, { "13", "14", "15", "16" } };
+
+  Rotate<basicAdt::CW, std::string> rotateStringClockwise(stringMatrix);
+  CheckMatrices(stringMatrix, resultsOne);
+  Rotate<basicAdt::CCW, std::string> rotateStringCClockwise(stringMatrix);
+  CheckMatrices(stringMatrix, resultsTwo);
+}
 
 BOOST_AUTO_TEST_SUITE_END()

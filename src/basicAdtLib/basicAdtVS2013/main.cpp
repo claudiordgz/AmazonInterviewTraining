@@ -40,12 +40,18 @@ int main() {
       { 13, 14, 15, 16 }
   };
 
+  Rotate<basicAdt::CW, int> rotateIntClockwise(intMatrix);
+  Rotate<basicAdt::CCW, int> rotateIntCClockwise(intMatrix);
+
   std::vector< std::vector<double> > doubleMatrix{
       { 1, 2, 3, 4 },
       { 5, 6, 7, 8 },
       { 9, 10, 11, 12 },
       { 13, 14, 15, 16 }
   };
+
+  Rotate<basicAdt::CW, double> rotateDblClockwise(doubleMatrix);
+  Rotate<basicAdt::CCW, double> rotateDblCClockwise(doubleMatrix);
 
   std::vector< std::vector<std::string> > stringMatrix{
       { "1", "2", "3", "4" },
@@ -54,15 +60,13 @@ int main() {
       { "13", "14", "15", "16" }
   };
 
-
-  Rotate<basicAdt::CW, int> rotateIntClockwise(intMatrix);
-  Rotate<basicAdt::CCW, int> rotateIntCClockwise(intMatrix);
-
-  Rotate<basicAdt::CW, double> rotateDblClockwise(doubleMatrix);
-  Rotate<basicAdt::CCW, double> rotateDblCClockwise(doubleMatrix);
-
   Rotate<basicAdt::CW, std::string> rotateStringClockwise(stringMatrix);
   Rotate<basicAdt::CCW, std::string> rotateStringCClockwise(stringMatrix);
+ 
+
+  
+
+  
 
 	return 0;
 }
