@@ -81,6 +81,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\basicAdt.cpp" />
+    <ClCompile Include="..\matrixOperations.cpp" />
     <ClCompile Include="..\stringOperations.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
