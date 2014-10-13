@@ -57,6 +57,17 @@ void encodeSpacesStringFind(std::string &rhs);
  * inal string, your method should return the original string.
  */
 std::string compressWord(std::string const &rhs);
+
+/*!Assume you have a method isSubstring which checks if one word is a
+ * substring of another. Given two strings, si and s2, write code to check if s2 is
+ * a rotation of s1 using only one call to isSubstring (e.g.,"waterbottle"is a rota-
+ * tion of "erbottlewat"
+*/
+class IsRotation {
+  bool isSubstring(std::string const &lhs, std::string const &rhs);
+public:
+  bool check(std::string const &lhs, std::string const &rhs);
+};
 }
 
 #endif

@@ -1,6 +1,6 @@
 Import('env','include_path','libs_path','extraLibPaths', 'commonLibs','commonDefines','commonCFlags','commonLFlags')
 
-projects = ['algorithms', 'basicAdt', 'graphs', 'sorting', 'traversal', 'trees', 'tries']
+projects = ['algorithms', 'basicAdt', 'graphs', 'sorting', 'traversal', 'trees', 'tries', 'linkedlist']
 
 for subdir in projects:
 	print("Building> "+ subdir + "Lib")

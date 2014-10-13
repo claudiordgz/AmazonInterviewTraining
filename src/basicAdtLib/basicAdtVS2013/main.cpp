@@ -16,7 +16,12 @@ int main() {
   using basicAdt::compressWord;
   using basicAdt::Rotate;
   using basicAdt::ClearRowsColumns;
+  using basicAdt::IsRotation;
 
+  std::string original("waterbottle");
+  std::string check("erbottlewat");
+  IsRotation rot;
+  bool stuff = rot.check(original, check);
 
 	/*std::string word("parangacutirimicuaro");
 	std::string permutation("oraucimiritucagnarap");
@@ -65,9 +70,6 @@ int main() {
   Rotate<basicAdt::CW, std::string> rotateStringClockwise(stringMatrix);
   Rotate<basicAdt::CCW, std::string> rotateStringCClockwise(stringMatrix);
  
-
-  */
-
   std::vector< std::vector<int> > squareMatrix{
       { 1, 2, 3, 4 },
       { 5, 0, 7, 8 },
@@ -101,6 +103,6 @@ int main() {
       std::cout << intMatrix[i][j] << ' ';
     }
     std::cout << std::endl;
-  }
+  }*/
   return 0;
 }

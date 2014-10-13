@@ -168,4 +168,12 @@ BOOST_AUTO_TEST_CASE( transform_0_rectangular_matrix )
   CheckMatrices(rectangularMatrix, resultMatrix);
 }
 
+BOOST_AUTO_TEST_CASE( check_rotation_in_string_substring )
+{
+	std::string original("waterbottle");
+  std::string result("erbottlewat");
+  basicAdt::IsRotation rot;
+  BOOST_CHECK(rot.check(original, result));
+}
+
 BOOST_AUTO_TEST_SUITE_END()
