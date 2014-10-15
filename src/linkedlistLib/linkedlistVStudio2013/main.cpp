@@ -9,6 +9,8 @@ using std::endl;
 int main()
 {
   linkedlist::List<std::string> list;
+  list.push_back("10");
+  list.push_back("10");
   list.push_back("5");
   list.push_back("10");
   list.push_back("10");

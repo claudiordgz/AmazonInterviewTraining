@@ -1,6 +1,8 @@
 #ifndef __LINKEDLISTIMPL__HPP__
 #define __LINKEDLISTIMPL__HPP__
 
+#include <map>
+
 namespace linkedlist
 {
 
@@ -10,9 +12,9 @@ List<T>::List(T const &root) : _size(1) {
 }
 
 template<class T>
-void List<T>::push_back(T const &root) {
+void List<T>::push_back(T const &val) {
   if (_root == nullptr) {
-    _root.reset(new Node<T>(root));
+    _root.reset(new Node<T>(val));
     _size++;
   }
   else {
@@ -20,35 +22,52 @@ void List<T>::push_back(T const &root) {
     while (current->next != nullptr) {
       current = current->next.get();
     }
-    current->next.reset(new Node<T>(root));
+    current->next.reset(new Node<T>(val));
     _size++;
   }
 }
 
 template<class T>
-void List<T>::erase(T const& value) {
-  if (_root != nullptr) 
-  {
-    if (_root->data == value){
-      _root = std::move(_root->next);
+void List<T>::erase(T const& value, int const &amount) {
+  int count{ 0 };
+  if (_root == nullptr) return;
+  iterator current = begin(), previous = nullptr;
+  while (current != nullptr) {
+    if (count == amount) return;
+    if (current->data != value){
+      previous = current;
     }
-    auto current = begin(), previous = begin();
-    current = current->next.get();
-    while (current->next != nullptr) {
-      if (current->data == value){
-          previous->next = std::move(current->next);
-          current = previous->next.get();
-          _size--;
+    else {
+      if (previous == nullptr){
+        _root = std::move(_root->next);
+        current = begin();
+      } else {
+        previous->next = std::move(current->next);
+        current = previous;
       }
-      else {
-        previous = previous->next.get();
-        current = previous->next.get();
-      }
+      _size--; count++;
     }
-    if (current->data == value){
-      previous->next.release();
+    if (previous != nullptr)
+      current = current->next.get();
+  }
+}
+
+template<class T>
+void List<T>::removeDuplicates(){
+  if (_root == nullptr) return;
+  typename std::map<T, bool> elements;
+  iterator current = begin(), previous{ nullptr };
+  while (current != nullptr) {
+    if (elements.find(current->data) == elements.end()){
+      elements[current->data] = true;
+      previous = current;
+    }
+    else {
+      previous->next = std::move(current->next);
       _size--;
+      current = previous;
     }
+    current = current->next.get();
   }
 }
 

@@ -23,7 +23,8 @@ public:
   List() : _size(0) {}
   List(T const &root);
   void push_back(T const &root);
-  void erase(T const& value);
+  void erase(T const& value, int const &amount=-1);
+  void removeDuplicates();
   iterator begin() { return _root.get(); }
   
 private:
