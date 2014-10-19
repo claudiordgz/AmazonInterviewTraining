@@ -61,7 +61,7 @@ echo.
 		echo Running %elementName%
 		echo %%a
 		echo ------------------------------------------------------------------
-		start "" /B %%a
+		start "" /B %%a --log_level=all
   	)
 ENDLOCAL
 goto:eof
