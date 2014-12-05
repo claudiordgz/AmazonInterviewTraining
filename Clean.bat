@@ -1,0 +1,21 @@
+@echo off
+setlocal disableDelayedExpansion
+
+del *.log
+del CrackingTheCodingInterview.aux
+del CrackingTheCodingInterview.dvi
+del CrackingTheCodingInterview.idv
+del CrackingTheCodingInterview.lg
+del CrackingTheCodingInterview.tmp
+del CrackingTheCodingInterview.toc
+del CrackingTheCodingInterview.xdv
+del *.4ct
+del *.4tc
+del CrackingTheCodingInterview.html
+del *.out
+del *.tps
+del *.xref
+del texput.log
+del *.tmp
+del *.synctex
+del ch01.pdf

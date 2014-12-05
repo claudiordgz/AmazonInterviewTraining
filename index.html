@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>
+         Claudiordgz Blog Series
+      </title>
+      <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+      <meta content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" name="generator"/>
+      <meta content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" name="originator"/>
+      <!-- html,xhtml,mathml, -css -->
+      <meta content="CrackingTheCodingInterview.tex" name="src"/>
+      <meta content="2014-12-05 02:08:00" name="date"/>
+      <link href="CrackingTheCodingInterview.css" rel="stylesheet" type="text/css"/>
+      <meta charset="utf-8"/>
+      <meta content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" name="generator"/>
+      <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+      <link href="css/blog.css" rel="stylesheet" type="text/css"/>
+      <script>
+         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ 
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), 
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) 
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga'); 
+ 
+ 
+ 
+ga('create', 'UA-35752941-2', 'auto'); 
+ga('require', 'linkid', 'linkid.js'); 
+ga('require', 'displayfeatures'); 
+ga('send', 'pageview');
+      </script>
+   </head>
+   <body>
+      <div class="navbar navbar-inverse navbar-static-top" id="top-nav">
+         <div class="center">
+            <p>
+            </p>
+            <div class="navbar-header">
+               <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+                  <span class="sr-only">
+                     Toggle navigation
+                  </span>
+                  <span class="icon-bar">
+                  </span>
+                  <span class="icon-bar">
+                  </span>
+                  <span class="icon-bar">
+                  </span>
+               </button>
+               <a class="navbar-brand" href="#">
+               </a>
+            </div>
+            <div class="collapse navbar-collapse" id="main-nav">
+               <p class="navbar-text">
+                  Claudiordgz
+                  <br/>
+               </p>
+               <p class="navbar-text">
+                  Solutions of Cracking the Coding Interview
+                  <br/>
+                  <br/>
+               </p>
+               <p class="navbar-text">
+                  Book Authors: Gayle Laakmann McDowel
+                  <br/>
+               </p>
+            </div>
+         </div>
+      </div>
+      <p>
+         <a id="toc">
+         </a>
+      </p>
+      <h2 class="likechapterHead">
+         <a id="x1-1000">
+         </a>
+         Contents
+      </h2>
+      <div class="row">
+         <div class="col-md-2" id="leftCol">
+            <div class="row">
+               <div class="col-xs-6">
+                  <h4 class="likesectionHead">
+                     Contents
+                  </h4>
+               </div>
+               <div class="col-xs-5">
+                  <a href="http://www.claudiordgz.com/study-series" id="claudiordgzLogo" itemprop="url">
+                     <div class="boxed">
+                        <img alt="pict" border="0" class="center" src="logo/logo_black.png"/>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <br/>
+            <br/>
+            <div class="nav nav-stacked" id="sidebar">
+               <div class="tableofcontents">
+                  <div class="panel-group" id="accordionToc">
+                     <div class="panel panel-default">
+                        <div class="panel-heading">
+                           <h4 class="panel-title">
+                              <a class="accordion-toggle" data-parent="#accordionToc" data-toggle="collapse" href="#collapseToc1">
+                                 <span class="pull-right clickable">
+                                    <i class="glyphicon glyphicon-chevron-up">
+                                    </i>
+                                 </span>
+                                 <span class="chapterToc">
+                                    1
+                                    <a href="#x1-20001" id="QQ2-1-2">
+                                       Arrays and Strings
+                                    </a>
+                                 </span>
+                              </a>
+                           </h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="collapseToc1">
+                           <div class="panel-body">
+                              <br/>
+                              <span class="subsectionToc">
+                                 1.0.1
+                                 <a href="#x1-30001" id="QQ2-1-3">
+                                    Exercises
+                                 </a>
+                              </span>
+                              <br/>
+                              <span class="subsubsectionToc">
+                                 <a href="#x1-60001" id="QQ2-1-6">
+                                    <b>
+                                       E-1.1
+                                    </b>
+                                 </a>
+                              </span>
+                              <br/>
+                              <span class="subsubsectionToc">
+                                 <a href="#x1-90001" id="QQ2-1-9">
+                                    <b>
+                                       E-1.2
+                                    </b>
+                                 </a>
+                              </span>
+                              <br/>
+                              <span class="subsubsectionToc">
+                                 <a href="#x1-120001" id="QQ2-1-12">
+                                    <b>
+                                       E-1.3
+                                    </b>
+                                 </a>
+                              </span>
+                              <br/>
+                              <span class="subsubsectionToc">
+                                 <a href="#x1-150001" id="QQ2-1-15">
+                                    <b>
+                                       E-1.4
+                                    </b>
+                                 </a>
+                              </span>
+                              <br/>
+                              <span class="subsubsectionToc">
+                                 <a href="#x1-180001" id="QQ2-1-18">
+                                    <b>
+                                       E-1.5
+                                    </b>
+                                 </a>
+                              </span>
+                              <br/>
+                              <span class="subsubsectionToc">
+                                 <a href="#x1-210001" id="QQ2-1-21">
+                                    <b>
+                                       E-1.6
+                                    </b>
+                                 </a>
+                              </span>
+                              <br/>
+                              <span class="subsubsectionToc">
+                                 <a href="#x1-240001" id="QQ2-1-24">
+                                    <b>
+                                       E-1.7
+                                    </b>
+                                 </a>
+                              </span>
+                              <br/>
+                              <span class="subsubsectionToc">
+                                 <a href="#x1-270001" id="QQ2-1-27">
+                                    <b>
+                                       E-1.8
+                                    </b>
+                                 </a>
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-7" id="docBody">
+            <div class="well">
+               <p>
+                  <a id="chap:ArraysAndStrings">
+                  </a>
+               </p>
+               <h2 class="chapterHead">
+                  <span class="titlemark">
+                     Chapter 1
+                  </span>
+                  <br/>
+                  <a id="x1-20001">
+                  </a>
+                  Arrays and Strings
+               </h2>
+               <p>
+                  The first chapter of exercises is not really the first the chapter in the book, it is more of a tiny subsection after telling you
+how it is in the professional world. So after some very interesting stuff you are handled some good exercises. So without
+any further ado... here they are.
+               </p>
+               <p>
+                  <a id="ssec:Exercises">
+                  </a>
+                  <a id="x1-2001r1">
+                  </a>
+               </p>
+               <h4 class="subsectionHead">
+                  <span class="titlemark">
+                     1.0.1
+                  </span>
+                  <a id="x1-30001">
+                  </a>
+                  Exercises
+               </h4>
+               <p>
+                  <a id="sssec:ex1_01">
+                  </a>
+               </p>
+               <div class="table-responsive">
+                  <table cellpadding="0" cellspacing="0" class="tabular" id="TBL-3">
+                     <colgroup id="TBL-3-1g">
+                        <col id="TBL-3-1">
+                        </col>
+                        <col id="TBL-3-2">
+                        </col>
+                     </colgroup>
+                     <tr id="TBL-3-1-" style="vertical-align:baseline;">
+                        <td class="td11" id="TBL-3-1-1" style="text-align:left;">
+                           <h5 class="subsubsectionHead">
+                              <a id="x1-60001">
+                              </a>
+                              <b>
+                                 E-1.1
+                              </b>
+                           </h5>
+                           <p>
+                           </p>
+                        </td>
+                        <td class="td11" id="TBL-3-1-2" style="text-align:right; white-space:nowrap;">
+                           <a class="btn btn-default pull-right" href="#claudiordgzLogo">
+                              <span class="glyphicon glyphicon-arrow-up">
+                              </span>
+                              Go to Top
+                           </a>
+                        </td>
+                     </tr>
+                     <tr id="TBL-3-2-" style="vertical-align:baseline;">
+                        <td class="td11" id="TBL-3-2-1" style="text-align:left;">
+                           <p>
+                           </p>
+                        </td>
+                     </tr>
+                  </table>
+               </div>
+               <p>
+                  Implement an algorithm to determine if a string has all unique characters. What if you cannotuse additional data
+structures?
+               </p>
+               <div class="panel-group" id="accordion1">
+                  <div class="panel panel-default">
+                     <a class="accordion-toggle" data-parent="#accordion1" data-toggle="collapse" href="#collapse1">
+                        <div class="panel-heading">
+                           <h4 class="panel-title">
+                              <span style="font-size:15px;color:#FE2E2E">
+                                 View Code
+                              </span>
+                              <span class="pull-right clickable">
+                                 <i class="glyphicon glyphicon-chevron-up">
+                                 </i>
+                              </span>
+                           </h4>
+                        </div>
+                     </a>
+                     <div class="panel-collapse collapse" id="collapse1">
+                        <div class="panel-body">
+                           <pre class="prettyprint"> 
+<br/> <div class="caption"><span class="id">: </span><span class="content">Exercise E-1.1</span></div><!--tex4ht:label?: x1-60001 --><!--l. 5--><pre class="listings"> <br/><span class="label"><a id="x1-6001r1"></a></span>#ifndef __GAYLE_CH01_EX11_HPP__ <br/><span class="label"><a id="x1-6002r2"></a></span>#define __GAYLE_CH01_EX11_HPP__ <br/><span class="label"><a id="x1-6003r3"></a></span> <br/><span class="label"><a id="x1-6004r4"></a></span>#include &lt;string&gt; <br/><span class="label"><a id="x1-6005r5"></a></span> <br/><span class="label"><a id="x1-6006r6"></a></span><!--l. 6--><span class="listings-nested">/*! @brief Implement an algorithm to determine if a string <br/><span class="label"><a id="x1-6007r7"></a></span> *  has all unique characters. What if you can not use <br/><span class="label"><a id="x1-6008r8"></a></span> *  additional data structures */</span> <br/><span class="label"><a id="x1-6009r9"></a></span>bool AllUnique(std::string const &amp;rhs); <br/><span class="label"><a id="x1-6010r10"></a></span> <br/><span class="label"><a id="x1-6011r11"></a></span>#endif
+          <br/><span class="label"><a id="x1-6012r12"></a></span></pre>
+         </pre>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="panel-group" id="accordion2">
+                  <div class="panel panel-default">
+                     <a class="accordion-toggle" data-parent="#accordion2" data-toggle="collapse" href="#collapse2">
+                        <div class="panel-heading">
+                           <h4 class="panel-title">
+                              <span style="font-size:15px;color:#FE2E2E">
+                                 View Code
+                              </span>
+                              <span class="pull-right clickable">
+                                 <i class="glyphicon glyphicon-chevron-up">
+                                 </i>
+                              </span>
+                           </h4>
+                        </div>
+                     </a>
+                     <div class="panel-collapse collapse" id="collapse2">
+                        <div class="panel-body">
+                           <pre class="prettyprint"> 
+<br/> <div class="caption"><span class="id">: </span><span class="content">Exercise E-1.1</span></div><!--tex4ht:label?: x1-60001 --><!--l. 7--><pre class="listings"> <br/><span class="label"><a id="x1-6013r1"></a></span>#include <!--l. 1--><span class="listings-nested">”ch01/ex1_1.hpp”</span> <br/><span class="label"><a id="x1-6014r2"></a></span> <br/><span class="label"><a id="x1-6015r3"></a></span> <br/><span class="label"><a id="x1-6016r4"></a></span>bool AllUnique(std::string const &amp;rhs) { <br/><span class="label"><a id="x1-6017r5"></a></span>  if(rhs.size() &gt; 26) { <br/><span class="label"><a id="x1-6018r6"></a></span>    return false; <br/><span class="label"><a id="x1-6019r7"></a></span>  } <br/><span class="label"><a id="x1-6020r8"></a></span>  int flag=0; <br/><span class="label"><a id="x1-6021r9"></a></span>  for (std::size_t i = 0; i != rhs.size(); ++i){ <br/><span class="label"><a id="x1-6022r10"></a></span>    int offset = rhs.at(i) - ’a’; <br/><span class="label"><a id="x1-6023r11"></a></span>    offset = 1 &lt;&lt; offset; <br/><span class="label"><a id="x1-6024r12"></a></span>    if (flag &amp; offset){ <br/><span class="label"><a id="x1-6025r13"></a></span>      return false; <br/><span class="label"><a id="x1-6026r14"></a></span>    } <br/><span class="label"><a id="x1-6027r15"></a></span>    flag = flag | offset; <br/><span class="label"><a id="x1-6028r16"></a></span>  } <br/><span class="label"><a id="x1-6029r17"></a></span>  return true; <br/><span class="label"><a id="x1-6030r18"></a></span>}
+          <br/><span class="label"><a id="x1-6031r19"></a></span></pre>
+         </pre>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <p>
+                  <a id="sssec:ex1_02">
+                  </a>
+               </p>
+               <div class="table-responsive">
+                  <table cellpadding="0" cellspacing="0" class="tabular" id="TBL-6">
+                     <colgroup id="TBL-6-1g">
+                        <col id="TBL-6-1">
+                        </col>
+                        <col id="TBL-6-2">
+                        </col>
+                     </colgroup>
+                     <tr id="TBL-6-1-" style="vertical-align:baseline;">
+                        <td class="td11" id="TBL-6-1-1" style="text-align:left;">
+                           <h5 class="subsubsectionHead">
+                              <a id="x1-90001">
+                              </a>
+                              <b>
+                                 E-1.2
+                              </b>
+                           </h5>
+                           <p>
+                           </p>
+                        </td>
+                        <td class="td11" id="TBL-6-1-2" style="text-align:right; white-space:nowrap;">
+                           <a class="btn btn-default pull-right" href="#claudiordgzLogo">
+                              <span class="glyphicon glyphicon-arrow-up">
+                              </span>
+                              Go to Top
+                           </a>
+                        </td>
+                     </tr>
+                     <tr id="TBL-6-2-" style="vertical-align:baseline;">
+                        <td class="td11" id="TBL-6-2-1" style="text-align:left;">
+                           <p>
+                           </p>
+                        </td>
+                     </tr>
+                  </table>
+               </div>
+               <p>
+                  Implement a function
+                  <code>
+                     void reverse(char⋆ str)
+                  </code>
+                  in C or C++ which reverses a null-terminated
+string.
+               </p>
+               <div class="panel-group" id="accordion3">
+                  <div class="panel panel-default">
+                     <a class="accordion-toggle" data-parent="#accordion3" data-toggle="collapse" href="#collapse3">
+                        <div class="panel-heading">
+                           <h4 class="panel-title">
+                              <span style="font-size:15px;color:#FE2E2E">
+                                 View Code
+                              </span>
+                              <span class="pull-right clickable">
+                                 <i class="glyphicon glyphicon-chevron-up">
+                                 </i>
+                              </span>
+                           </h4>
+                        </div>
+                     </a>
+                     <div class="panel-collapse collapse" id="collapse3">
+                        <div class="panel-body">
+                           <pre class="prettyprint"> 
+<br/> <div class="caption"><span class="id">: </span><span class="content">Exercise E-1.2</span></div><!--tex4ht:label?: x1-90001 --><!--l. 5--><pre class="listings"> <br/><span class="label"><a id="x1-9001r1"></a></span>#ifndef __GAYLE_CH01_EX12_HPP__ <br/><span class="label"><a id="x1-9002r2"></a></span>#define __GAYLE_CH01_EX12_HPP__ <br/><span class="label"><a id="x1-9003r3"></a></span> <br/><span class="label"><a id="x1-9004r4"></a></span><!--l. 4--><span class="listings-nested">/*! @brief Write code to reverse a <br/><span class="label"><a id="x1-9005r5"></a></span> * C Style String */</span> <br/><span class="label"><a id="x1-9006r6"></a></span>void Reverse(char *str); <br/><span class="label"><a id="x1-9007r7"></a></span> <br/><span class="label"><a id="x1-9008r8"></a></span>#endif
+          <br/><span class="label"><a id="x1-9009r9"></a></span></pre>
+         </pre>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="panel-group" id="accordion4">
+                  <div class="panel panel-default">
+                     <a class="accordion-toggle" data-parent="#accordion4" data-toggle="collapse" href="#collapse4">
+                        <div class="panel-heading">
+                           <h4 class="panel-title">
+                              <span style="font-size:15px;color:#FE2E2E">
+                                 View Code
+                              </span>
+                              <span class="pull-right clickable">
+                                 <i class="glyphicon glyphicon-chevron-up">
+                                 </i>
+                              </span>
+                           </h4>
+                        </div>
+                     </a>
+                     <div class="panel-collapse collapse" id="collapse4">
+                        <div class="panel-body">
+                           <pre class="prettyprint"> 
+<br/> <div class="caption"><span class="id">: </span><span class="content">Exercise E-1.2</span></div><!--tex4ht:label?: x1-90001 --><!--l. 7--><pre class="listings"> <br/><span class="label"><a id="x1-9010r1"></a></span>#include <!--l. 1--><span class="listings-nested">”ch01/ex1_2.hpp”</span> <br/><span class="label"><a id="x1-9011r2"></a></span> <br/><span class="label"><a id="x1-9012r3"></a></span> <br/><span class="label"><a id="x1-9013r4"></a></span>void Reverse(char *str) { <br/><span class="label"><a id="x1-9014r5"></a></span>  if(str){ <br/><span class="label"><a id="x1-9015r6"></a></span>    char *end = str; <br/><span class="label"><a id="x1-9016r7"></a></span>    while(*end) { <br/><span class="label"><a id="x1-9017r8"></a></span>      ++end; <br/><span class="label"><a id="x1-9018r9"></a></span>    } <br/><span class="label"><a id="x1-9019r10"></a></span>    --end; <br/><span class="label"><a id="x1-9020r11"></a></span>    char tmp; <br/><span class="label"><a id="x1-9021r12"></a></span>    while(str &lt; end) { <br/><span class="label"><a id="x1-9022r13"></a></span>      tmp = *str; <br/><span class="label"><a id="x1-9023r14"></a></span>      *str++ = *end; <br/><span class="label"><a id="x1-9024r15"></a></span>      *end--  = tmp; <br/><span class="label"><a id="x1-9025r16"></a></span>    } <br/><span class="label"><a id="x1-9026r17"></a></span>  } <br/><span class="label"><a id="x1-9027r18"></a></span>}
+          <br/><span class="label"><a id="x1-9028r19"></a></span></pre>
+         </pre>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <a id="sssec:ex1_03">
+               </a>
+               <div class="table-responsive">
+                  <table cellpadding="0" cellspacing="0" class="tabular" id="TBL-9">
+                     <colgroup id="TBL-9-1g">
+                        <col id="TBL-9-1">
+                        </col>
+                        <col id="TBL-9-2">
+                        </col>
+                     </colgroup>
+                     <tr id="TBL-9-1-" style="vertical-align:baseline;">
+                        <td class="td11" id="TBL-9-1-1" style="text-align:left;">
+                           <h5 class="subsubsectionHead">
+                              <a id="x1-120001">
+                              </a>
+                              <b>
+                                 E-1.3
+                              </b>
+                           </h5>
+                           <p>
+                           </p>
+                        </td>
+                        <td class="td11" id="TBL-9-1-2" style="text-align:right; white-space:nowrap;">
+                           <a class="btn btn-default pull-right" href="#claudiordgzLogo">
+                              <span class="glyphicon glyphicon-arrow-up">
+                              </span>
+                              Go to Top
+                           </a>
+                        </td>
+                     </tr>
+                     <tr id="TBL-9-2-" style="vertical-align:baseline;">
+                        <td class="td11" id="TBL-9-2-1" style="text-align:left;">
+                           <p>
+                           </p>
+                        </td>
+                     </tr>
+                  </table>
+               </div>
+               <p>
+                  Given two strings, write a method to decide if one is a permutation of the other.
+               </p>
+               <div class="panel-group" id="accordion5">
+                  <div class="panel panel-default">
+                     <a class="accordion-toggle" data-parent="#accordion5" data-toggle="collapse" href="#collapse5">
+                        <div class="panel-heading">
+                           <h4 class="panel-title">
+                              <span style="font-size:15px;color:#FE2E2E">
+                                 View Code
+                              </span>
+                              <span class="pull-right clickable">
+                                 <i class="glyphicon glyphicon-chevron-up">
+                                 </i>
+                              </span>
+                           </h4>
+                        </div>
+                     </a>
+                     <div class="panel-collapse collapse" id="collapse5">
+                        <div class="panel-body">
+                           <pre class="prettyprint"> 
+<br/> <div class="caption"><span class="id">: </span><span class="content">Exercise E-1.3</span></div><!--tex4ht:label?: x1-120001 --><!--l. 5--><pre class="listings"> <br/><span class="label"><a id="x1-12001r1"></a></span>#ifndef __GAYLE_CH01_EX13_HPP__ <br/><span class="label"><a id="x1-12002r2"></a></span>#define __GAYLE_CH01_EX13_HPP__ <br/><span class="label"><a id="x1-12003r3"></a></span> <br/><span class="label"><a id="x1-12004r4"></a></span>#include &lt;boost/tuple/tuple.hpp&gt; <br/><span class="label"><a id="x1-12005r5"></a></span>#include &lt;boost/iterator/zip_iterator.hpp&gt; <br/><span class="label"><a id="x1-12006r6"></a></span>#include &lt;boost/range/iterator_range.hpp&gt; <br/><span class="label"><a id="x1-12007r7"></a></span> <br/><span class="label"><a id="x1-12008r8"></a></span>#include &lt;string&gt; <br/><span class="label"><a id="x1-12009r9"></a></span>#include &lt;vector&gt; <br/><span class="label"><a id="x1-12010r10"></a></span> <br/><span class="label"><a id="x1-12011r11"></a></span><!--l. 11--><span class="listings-nested">/*! @brief Similar to Python’s Zip function <br/><span class="label"><a id="x1-12012r12"></a></span> * Allows simultaneous iteration of multiple <br/><span class="label"><a id="x1-12013r13"></a></span> * containers */</span> <br/><span class="label"><a id="x1-12014r14"></a></span>template&lt;class... Conts&gt; <br/><span class="label"><a id="x1-12015r15"></a></span>auto zip_range(Conts&amp;... conts) -&gt; decltype(boost::make_iterator_range( <br/><span class="label"><a id="x1-12016r16"></a></span>  boost::make_zip_iterator(boost::make_tuple(conts.begin()...)), <br/><span class="label"><a id="x1-12017r17"></a></span>  boost::make_zip_iterator(boost::make_tuple(conts.end()...))) <br/><span class="label"><a id="x1-12018r18"></a></span>  ) <br/><span class="label"><a id="x1-12019r19"></a></span>{ <br/><span class="label"><a id="x1-12020r20"></a></span>  return {boost::make_zip_iterator(boost::make_tuple(conts.begin()...)), <br/><span class="label"><a id="x1-12021r21"></a></span>          boost::make_zip_iterator(boost::make_tuple(conts.end()...))}; <br/><span class="label"><a id="x1-12022r22"></a></span>} <br/><span class="label"><a id="x1-12023r23"></a></span> <br/><span class="label"><a id="x1-12024r24"></a></span> <br/><span class="label"><a id="x1-12025r25"></a></span><!--l. 25--><span class="listings-nested">/*! @brief Given two strings, write a method <br/><span class="label"><a id="x1-12026r26"></a></span> * to decide if one is a permutation of the other. */</span> <br/><span class="label"><a id="x1-12027r27"></a></span>bool IsPermutation(std::string const &amp;lhs, std::string const &amp;rhs); <br/><span class="label"><a id="x1-12028r28"></a></span> <br/><span class="label"><a id="x1-12029r29"></a></span><!--l. 29--><span class="listings-nested">/*! @brief Inserts a char into a bit container, <br/><span class="label"><a id="x1-12030r30"></a></span> * if the char already exist in that bit container <br/><span class="label"><a id="x1-12031r31"></a></span> * then use a new one. */</span> <br/><span class="label"><a id="x1-12032r32"></a></span>void PushOffsetIntoContainer(std::vector&lt;int&gt; &amp;bit_container, char const &amp;element); <br/><span class="label"><a id="x1-12033r33"></a></span> <br/><span class="label"><a id="x1-12034r34"></a></span>#endif
+          <br/><span class="label"><a id="x1-12035r35"></a></span></pre>
+         </pre>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="panel-group" id="accordion6">
+                  <div class="panel panel-default">
+                     <a class="accordion-toggle" data-parent="#accordion6" data-toggle="collapse" href="#collapse6">
+                        <div class="panel-heading">
+                           <h4 class="panel-title">
+                              <span style="font-size:15px;color:#FE2E2E">
+                                 View Code
+                              </span>
+                              <span class="pull-right clickable">
+                                 <i class="glyphicon glyphicon-chevron-up">
+                                 </i>
+                              </span>
+                           </h4>
+                        </div>
+                     </a>
+                     <div class="panel-collapse collapse" id="collapse6">
+                        <div class="panel-body">
+                           <pre class="prettyprint"> 
+<br/> <div class="caption"><span class="id">: </span><span class="content">Exercise E-1.3</span></div><!--tex4ht:label?: x1-120001 --><!--l. 7--><pre class="listings"> <br/><span class="label"><a id="x1-12036r1"></a></span>#include <!--l. 1--><span class="listings-nested">”ch01/ex1_3.hpp”</span> <br/><span class="label"><a id="x1-12037r2"></a></span> <br/><span class="label"><a id="x1-12038r3"></a></span> <br/><span class="label"><a id="x1-12039r4"></a></span>bool IsPermutation(std::string const &amp;lhs, std::string const &amp;rhs) <br/><span class="label"><a id="x1-12040r5"></a></span>{ <br/><span class="label"><a id="x1-12041r6"></a></span>  bool returnVal = false; <br/><span class="label"><a id="x1-12042r7"></a></span>  if(lhs.size() == rhs.size()) { <br/><span class="label"><a id="x1-12043r8"></a></span>    std::vector&lt;int&gt; flag_lhs { 0 }; <br/><span class="label"><a id="x1-12044r9"></a></span>    std::vector&lt;int&gt; flag_rhs { 0 }; <br/><span class="label"><a id="x1-12045r10"></a></span>    for(auto&amp;&amp; str : zip_range(lhs, rhs)) { <br/><span class="label"><a id="x1-12046r11"></a></span>    PushOffsetIntoContainer(flag_lhs, str.get&lt;0&gt;()); <br/><span class="label"><a id="x1-12047r12"></a></span>    PushOffsetIntoContainer(flag_rhs, str.get&lt;1&gt;()); <br/><span class="label"><a id="x1-12048r13"></a></span>    } <br/><span class="label"><a id="x1-12049r14"></a></span>    if(flag_rhs.size() == flag_lhs.size()) { <br/><span class="label"><a id="x1-12050r15"></a></span>      for(auto&amp;&amp; bitContainer : zip_range(flag_lhs, flag_rhs)) { <br/><span class="label"><a id="x1-12051r16"></a></span>      if (bitContainer.get&lt;0&gt;() == bitContainer.get&lt;1&gt;()) { <br/><span class="label"><a id="x1-12052r17"></a></span>          returnVal = true; <br/><span class="label"><a id="x1-12053r18"></a></span>        } else { <br/><span class="label"><a id="x1-12054r19"></a></span>          returnVal = false; <br/><span class="label"><a id="x1-12055r20"></a></span>        } <br/><span class="label"><a id="x1-12056r21"></a></span>      } <br/><span class="label"><a id="x1-12057r22"></a></span>    } <br/><span class="label"><a id="x1-12058r23"></a></span>  } <br/><span class="label"><a id="x1-12059r24"></a></span>  return (returnVal); <br/><span class="label"><a id="x1-12060r25"></a></span>} <br/><span class="label"><a id="x1-12061r26"></a></span> <br/><span class="label"><a id="x1-12062r27"></a></span>void PushOffsetIntoContainer(std::vector&lt;int&gt; &amp;bit_container, char const &amp;element){ <br/><span class="label"><a id="x1-12063r28"></a></span>  int offset_ = element - ’a’; <br/><span class="label"><a id="x1-12064r29"></a></span>  offset_ = 1 &lt;&lt; offset_; <br/><span class="label"><a id="x1-12065r30"></a></span>  for(auto it = bit_container.begin(); it != bit_container.end(); ++it) { <br/><span class="label"><a id="x1-12066r31"></a></span>    if(*it &amp; offset_) { <br/><span class="label"><a id="x1-12067r32"></a></span>      if (std::distance(it, bit_container.end()) == 1) { <br/><span class="label"><a id="x1-12068r33"></a></span>        int pushIt = std::distance(bit_container.begin(), it); <br/><span class="label"><a id="x1-12069r34"></a></span>        bit_container.push_back(0); <br/><span class="label"><a id="x1-12070r35"></a></span>        it = bit_container.begin(); <br/><span class="label"><a id="x1-12071r36"></a></span>        std::advance(bit_container.begin(), pushIt); <br/><span class="label"><a id="x1-12072r37"></a></span>      } <br/><span class="label"><a id="x1-12073r38"></a></span>    } else { <br/><span class="label"><a id="x1-12074r39"></a></span>      *it = *it | offset_; <br/><span class="label"><a id="x1-12075r40"></a></span>      break; <br/><span class="label"><a id="x1-12076r41"></a></span>    } <br/><span class="label"><a id="x1-12077r42"></a></span>  } <br/><span class="label"><a id="x1-12078r43"></a></span>}
+          <br/><span class="label"><a id="x1-12079r44"></a></span></pre>
+         </pre>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <a id="sssec:ex1_04">
+               </a>
+               <div class="table-responsive">
+                  <table cellpadding="0" cellspacing="0" class="tabular" id="TBL-12">
+                     <colgroup id="TBL-12-1g">
+                        <col id="TBL-12-1">
+                        </col>
+                        <col id="TBL-12-2">
+                        </col>
+                     </colgroup>
+                     <tr id="TBL-12-1-" style="vertical-align:baseline;">
+                        <td class="td11" id="TBL-12-1-1" style="text-align:left;">
+                           <h5 class="subsubsectionHead">
+                              <a id="x1-150001">
+                              </a>
+                              <b>
+                                 E-1.4
+                              </b>
+                           </h5>
+                           <p>
+                           </p>
+                        </td>
+                        <td class="td11" id="TBL-12-1-2" style="text-align:right; white-space:nowrap;">
+                           <a class="btn btn-default pull-right" href="#claudiordgzLogo">
+                              <span class="glyphicon glyphicon-arrow-up">
+                              </span>
+                              Go to Top
+                           </a>
+                        </td>
+                     </tr>
+                     <tr id="TBL-12-2-" style="vertical-align:baseline;">
+                        <td class="td11" id="TBL-12-2-1" style="text-align:left;">
+                           <p>
+                           </p>
+                        </td>
+                     </tr>
+                  </table>
+               </div>
+               <p>
+                  Write a method to replace all spaces in a string with’%20’. You may assume that the string has sufficient space at the
+end of the string to hold the additional characters, and that you are given the “true” length of the string.
+(Note: if implementing in Java, please use a character array so that you can perform this operation in
+place.)
+                  <br class="newline"/>
+               </p>
+               <p>
+                  EXAMPLE
+                  <br class="newline"/>
+                  Input: “Mr John Smith”
+                  <br class="newline"/>
+                  Output: “Mr%20Dohn%20Smith”
+               </p>
+               <div class="panel-group" id="accordion7">
+                  <div class="panel panel-default">
+                     <a class="accordion-toggle" data-parent="#accordion7" data-toggle="collapse" href="#collapse7">
+                        <div class="panel-heading">
+                           <h4 class="panel-title">
+                              <span style="font-size:15px;color:#FE2E2E">
+                                 View Code
+                              </span>
+                              <span class="pull-right clickable">
+                                 <i class="glyphicon glyphicon-chevron-up">
+                                 </i>
+                              </span>
+                           </h4>
+                        </div>
+                     </a>
+                     <div class="panel-collapse collapse" id="collapse7">
+                        <div class="panel-body">
+                           <pre class="prettyprint"> 
+<br/> <div class="caption"><span class="id">: </span><span class="content">Exercise E-1.4</span></div><!--tex4ht:label?: x1-150001 --><!--l. 9--><pre class="listings"> <br/><span class="label"><a id="x1-15001r1"></a></span>#ifndef __GAYLE_CH01_EX14_HPP__ <br/><span class="label"><a id="x1-15002r2"></a></span>#define __GAYLE_CH01_EX14_HPP__ <br/><span class="label"><a id="x1-15003r3"></a></span> <br/><span class="label"><a id="x1-15004r4"></a></span>#include &lt;string&gt; <br/><span class="label"><a id="x1-15005r5"></a></span> <br/><span class="label"><a id="x1-15006r6"></a></span><!--l. 6--><span class="listings-nested">/*! @brief Write a method to replace all spaces <br/><span class="label"><a id="x1-15007r7"></a></span> * in a string with’%20’. You may assume that <br/><span class="label"><a id="x1-15008r8"></a></span> * the string has sufficient space at the end of <br/><span class="label"><a id="x1-15009r9"></a></span> * the string to hold the additional characters, <br/><span class="label"><a id="x1-15010r10"></a></span> * and that you are given the ”true” length of the <br/><span class="label"><a id="x1-15011r11"></a></span> * string. */</span> <br/><span class="label"><a id="x1-15012r12"></a></span>void encodeSpacesStringNoFindNoInsert(std::string &amp;rhs); <br/><span class="label"><a id="x1-15013r13"></a></span>void encodeSpacesStringFind(std::string &amp;rhs); <br/><span class="label"><a id="x1-15014r14"></a></span> <br/><span class="label"><a id="x1-15015r15"></a></span>#endif
+          <br/><span class="label"><a id="x1-15016r16"></a></span></pre>
+         </pre>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="panel-group" id="accordion8">
+                  <div class="panel panel-default">
+                     <a class="accordion-toggle" data-parent="#accordion8" data-toggle="collapse" href="#collapse8">
+                        <div class="panel-heading">
+                           <h4 class="panel-title">
+                              <span style="font-size:15px;color:#FE2E2E">
+                                 View Code
+                              </span>
+                              <span class="pull-right clickable">
+                                 <i class="glyphicon glyphicon-chevron-up">
+                                 </i>
+                              </span>
+                           </h4>
+                        </div>
+                     </a>
+                     <div class="panel-collapse collapse" id="collapse8">
+                        <div class="panel-body">
+                           <pre class="prettyprint"> 
+<br/> <div class="caption"><span class="id">: </span><span class="content">Exercise E-1.4</span></div><!--tex4ht:label?: x1-150001 --><!--l. 11--><pre class="listings"> <br/><span class="label"><a id="x1-15017r1"></a></span> #include <!--l. 1--><span class="listings-nested">”ch01/ex1_4.hpp”</span> <br/><span class="label"><a id="x1-15018r2"></a></span> <br/><span class="label"><a id="x1-15019r3"></a></span> <br/><span class="label"><a id="x1-15020r4"></a></span>void encodeSpacesStringNoFindNoInsert(std::string &amp;rhs) { <br/><span class="label"><a id="x1-15021r5"></a></span>  std::string::iterator spaceFound = rhs.end(); <br/><span class="label"><a id="x1-15022r6"></a></span>  for (auto it = rhs.begin(); it != rhs.end(); ++it) { <br/><span class="label"><a id="x1-15023r7"></a></span>    if (*it == ’ ’) { <br/><span class="label"><a id="x1-15024r8"></a></span>      if (spaceFound == rhs.end()){ <br/><span class="label"><a id="x1-15025r9"></a></span>        spaceFound = it; <br/><span class="label"><a id="x1-15026r10"></a></span>      } <br/><span class="label"><a id="x1-15027r11"></a></span>    } <br/><span class="label"><a id="x1-15028r12"></a></span>    else { <br/><span class="label"><a id="x1-15029r13"></a></span>      if (spaceFound != rhs.end()) { <br/><span class="label"><a id="x1-15030r14"></a></span>        auto spaceEnd = it; <br/><span class="label"><a id="x1-15031r15"></a></span>        std::string middleSequence; <br/><span class="label"><a id="x1-15032r16"></a></span>        for (auto innerItr = spaceFound; innerItr != spaceEnd; ++innerItr) { <br/><span class="label"><a id="x1-15033r17"></a></span>          middleSequence.append(<!--l. 17--><span class="listings-nested">”%20”</span>); <br/><span class="label"><a id="x1-15034r18"></a></span>        } <br/><span class="label"><a id="x1-15035r19"></a></span>        auto SequenceBegin = std::distance(rhs.begin(), spaceFound); <br/><span class="label"><a id="x1-15036r20"></a></span>        auto SequenceEnd = std::distance(rhs.begin(), spaceEnd); <br/><span class="label"><a id="x1-15037r21"></a></span>        std::string sequence(rhs.begin(), rhs.begin() + SequenceBegin); <br/><span class="label"><a id="x1-15038r22"></a></span>        sequence.append(middleSequence); <br/><span class="label"><a id="x1-15039r23"></a></span>        sequence.append(rhs.begin() + SequenceEnd, rhs.end()); <br/><span class="label"><a id="x1-15040r24"></a></span>        rhs = sequence; <br/><span class="label"><a id="x1-15041r25"></a></span>        it = rhs.begin() + SequenceEnd; <br/><span class="label"><a id="x1-15042r26"></a></span>        spaceFound = rhs.end(); <br/><span class="label"><a id="x1-15043r27"></a></span>      } <br/><span class="label"><a id="x1-15044r28"></a></span>    } <br/><span class="label"><a id="x1-15045r29"></a></span>  } <br/><span class="label"><a id="x1-15046r30"></a></span>  if (spaceFound != rhs.end()){ <br/><span class="label"><a id="x1-15047r31"></a></span>    rhs.assign(rhs.begin(), spaceFound); <br/><span class="label"><a id="x1-15048r32"></a></span>  } <br/><span class="label"><a id="x1-15049r33"></a></span>} <br/><span class="label"><a id="x1-15050r34"></a></span> <br/><span class="label"><a id="x1-15051r35"></a></span>void encodeSpacesStringFind(std::string &amp;rhs) { <br/><span class="label"><a id="x1-15052r36"></a></span>  std::string::iterator spaceFound = rhs.end(); <br/><span class="label"><a id="x1-15053r37"></a></span>  std::string::iterator finishSpaces; <br/><span class="label"><a id="x1-15054r38"></a></span>  bool changed = false; <br/><span class="label"><a id="x1-15055r39"></a></span>  for (auto it = rhs.end()-1; it != rhs.begin(); --it) { <br/><span class="label"><a id="x1-15056r40"></a></span>    if (*it == ’ ’) { <br/><span class="label"><a id="x1-15057r41"></a></span>      if (spaceFound == rhs.end()){ <br/><span class="label"><a id="x1-15058r42"></a></span>        spaceFound = it; <br/><span class="label"><a id="x1-15059r43"></a></span>      } <br/><span class="label"><a id="x1-15060r44"></a></span>    } <br/><span class="label"><a id="x1-15061r45"></a></span>    else { <br/><span class="label"><a id="x1-15062r46"></a></span>      finishSpaces = ++it; <br/><span class="label"><a id="x1-15063r47"></a></span>      break; <br/><span class="label"><a id="x1-15064r48"></a></span>    } <br/><span class="label"><a id="x1-15065r49"></a></span>  } <br/><span class="label"><a id="x1-15066r50"></a></span>  rhs.assign(rhs.begin(), finishSpaces); <br/><span class="label"><a id="x1-15067r51"></a></span>  for (size_t pos = rhs.find(’ ’); pos != std::string::npos; pos = rhs.find(’ ’, pos)) <br/><span class="label"><a id="x1-15068r52"></a></span>  { <br/><span class="label"><a id="x1-15069r53"></a></span>    rhs.replace(pos, 1, <!--l. 53--><span class="listings-nested">”%20”</span>); <br/><span class="label"><a id="x1-15070r54"></a></span>  } <br/><span class="label"><a id="x1-15071r55"></a></span>}
+          <br/><span class="label"><a id="x1-15072r56"></a></span></pre>
+         </pre>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <a id="sssec:ex1_05">
+               </a>
+               <div class="table-responsive">
+                  <table cellpadding="0" cellspacing="0" class="tabular" id="TBL-15">
+                     <colgroup id="TBL-15-1g">
+                        <col id="TBL-15-1">
+                        </col>
+                        <col id="TBL-15-2">
+                        </col>
+                     </colgroup>
+                     <tr id="TBL-15-1-" style="vertical-align:baseline;">
+                        <td class="td11" id="TBL-15-1-1" style="text-align:left;">
+                           <h5 class="subsubsectionHead">
+                              <a id="x1-180001">
+                              </a>
+                              <b>
+                                 E-1.5
+                              </b>
+                           </h5>
+                           <p>
+                           </p>
+                        </td>
+                        <td class="td11" id="TBL-15-1-2" style="text-align:right; white-space:nowrap;">
+                           <a class="btn btn-default pull-right" href="#claudiordgzLogo">
+                              <span class="glyphicon glyphicon-arrow-up">
+                              </span>
+                              Go to Top
+                           </a>
+                        </td>
+                     </tr>
+                     <tr id="TBL-15-2-" style="vertical-align:baseline;">
+                        <td class="td11" id="TBL-15-2-1" style="text-align:left;">
+                           <p>
+                           </p>
+                        </td>
+                     </tr>
+                  </table>
+               </div>
+               <p>
+                  Implement a method to perform basic string compression using the counts of repeated characters. For example, the
+string aabcccccaaa would become a2blc5a3. If the ”compressed” string would not become smaller than the orig- inal
+string, your method should return the original string.
+               </p>
+               <div class="panel-group" id="accordion9">
+                  <div class="panel panel-default">
+                     <a class="accordion-toggle" data-parent="#accordion9" data-toggle="collapse" href="#collapse9">
+                        <div class="panel-heading">
+                           <h4 class="panel-title">
+                              <span style="font-size:15px;color:#FE2E2E">
+                                 View Code
+                              </span>
+                              <span class="pull-right clickable">
+                                 <i class="glyphicon glyphicon-chevron-up">
+                                 </i>
+                              </span>
+                           </h4>
+                        </div>
+                     </a>
+                     <div class="panel-collapse collapse" id="collapse9">
+                        <div class="panel-body">
+                           <pre class="prettyprint"> 
+<br/> <div class="caption"><span class="id">: </span><span class="content">Exercise E-1.5</span></div><!--tex4ht:label?: x1-180001 --><!--l. 8--><pre class="listings"> <br/><span class="label"><a id="x1-18001r1"></a></span>#ifndef __GAYLE_CH01_EX15_HPP__ <br/><span class="label"><a id="x1-18002r2"></a></span>#define __GAYLE_CH01_EX15_HPP__ <br/><span class="label"><a id="x1-18003r3"></a></span> <br/><span class="label"><a id="x1-18004r4"></a></span>#include &lt;string&gt; <br/><span class="label"><a id="x1-18005r5"></a></span> <br/><span class="label"><a id="x1-18006r6"></a></span><!--l. 6--><span class="listings-nested">/*! Implement a method to perform basic string <br/><span class="label"><a id="x1-18007r7"></a></span> * compression using the counts of repeated characters. <br/><span class="label"><a id="x1-18008r8"></a></span> * For example, the string aabcccccaaa would become <br/><span class="label"><a id="x1-18009r9"></a></span> * a2blc5a3. If the ”compressed” string would not <br/><span class="label"><a id="x1-18010r10"></a></span> * become smaller than the original string, your method <br/><span class="label"><a id="x1-18011r11"></a></span> * should return the original string. */</span> <br/><span class="label"><a id="x1-18012r12"></a></span>std::string compressWord(std::string const &amp;rhs); <br/><span class="label"><a id="x1-18013r13"></a></span> <br/><span class="label"><a id="x1-18014r14"></a></span> <br/><span class="label"><a id="x1-18015r15"></a></span>#endif
+          <br/><span class="label"><a id="x1-18016r16"></a></span></pre>
+         </pre>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="panel-group" id="accordion10">
+                  <div class="panel panel-default">
+                     <a class="accordion-toggle" data-parent="#accordion10" data-toggle="collapse" href="#collapse10">
+                        <div class="panel-heading">
+                           <h4 class="panel-title">
+                              <span style="font-size:15px;color:#FE2E2E">
+                                 View Code
+                              </span>
+                              <span class="pull-right clickable">
+                                 <i class="glyphicon glyphicon-chevron-up">
+                                 </i>
+                              </span>
+                           </h4>
+                        </div>
+                     </a>
+                     <div class="panel-collapse collapse" id="collapse10">
+                        <div class="panel-body">
+                           <pre class="prettyprint"> 
+<br/> <div class="caption"><span class="id">: </span><span class="content">Exercise E-1.5</span></div><!--tex4ht:label?: x1-180001 --><!--l. 10--><pre class="listings"> <br/><span class="label"><a id="x1-18017r1"></a></span>#include <!--l. 1--><span class="listings-nested">”ch01/ex1_5.hpp”</span> <br/><span class="label"><a id="x1-18018r2"></a></span>#include &lt;sstream&gt; <br/><span class="label"><a id="x1-18019r3"></a></span> <br/><span class="label"><a id="x1-18020r4"></a></span>std::string compressWord(std::string const &amp;rhs) { <br/><span class="label"><a id="x1-18021r5"></a></span>  auto it = rhs.begin(); <br/><span class="label"><a id="x1-18022r6"></a></span>  auto pastEl = *it; <br/><span class="label"><a id="x1-18023r7"></a></span>  std::advance(it, 1); <br/><span class="label"><a id="x1-18024r8"></a></span>  std::stringstream finalAssembly; <br/><span class="label"><a id="x1-18025r9"></a></span>  int count = 1; <br/><span class="label"><a id="x1-18026r10"></a></span>  for (; it != rhs.end(); ++it) { <br/><span class="label"><a id="x1-18027r11"></a></span>    if (pastEl == *it){ <br/><span class="label"><a id="x1-18028r12"></a></span>      count += 1; <br/><span class="label"><a id="x1-18029r13"></a></span>    } <br/><span class="label"><a id="x1-18030r14"></a></span>    else { <br/><span class="label"><a id="x1-18031r15"></a></span>      finalAssembly &lt;&lt; pastEl &lt;&lt; count; <br/><span class="label"><a id="x1-18032r16"></a></span>      count = 1; <br/><span class="label"><a id="x1-18033r17"></a></span>      pastEl = *it; <br/><span class="label"><a id="x1-18034r18"></a></span>    } <br/><span class="label"><a id="x1-18035r19"></a></span>  } <br/><span class="label"><a id="x1-18036r20"></a></span>  finalAssembly &lt;&lt; pastEl &lt;&lt; count; <br/><span class="label"><a id="x1-18037r21"></a></span>  std::string result = finalAssembly.str(); <br/><span class="label"><a id="x1-18038r22"></a></span>  if (rhs.size() &lt;= result.size()) { <br/><span class="label"><a id="x1-18039r23"></a></span>    return rhs; <br/><span class="label"><a id="x1-18040r24"></a></span>  } <br/><span class="label"><a id="x1-18041r25"></a></span>  else { <br/><span class="label"><a id="x1-18042r26"></a></span>    return result; <br/><span class="label"><a id="x1-18043r27"></a></span>  } <br/><span class="label"><a id="x1-18044r28"></a></span>}
+          <br/><span class="label"><a id="x1-18045r29"></a></span></pre>
+         </pre>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <a id="sssec:ex1_06">
+               </a>
+               <div class="table-responsive">
+                  <table cellpadding="0" cellspacing="0" class="tabular" id="TBL-18">
+                     <colgroup id="TBL-18-1g">
+                        <col id="TBL-18-1">
+                        </col>
+                        <col id="TBL-18-2">
+                        </col>
+                     </colgroup>
+                     <tr id="TBL-18-1-" style="vertical-align:baseline;">
+                        <td class="td11" id="TBL-18-1-1" style="text-align:left;">
+                           <h5 class="subsubsectionHead">
+                              <a id="x1-210001">
+                              </a>
+                              <b>
+                                 E-1.6
+                              </b>
+                           </h5>
+                           <p>
+                           </p>
+                        </td>
+                        <td class="td11" id="TBL-18-1-2" style="text-align:right; white-space:nowrap;">
+                           <a class="btn btn-default pull-right" href="#claudiordgzLogo">
+                              <span class="glyphicon glyphicon-arrow-up">
+                              </span>
+                              Go to Top
+                           </a>
+                        </td>
+                     </tr>
+                     <tr id="TBL-18-2-" style="vertical-align:baseline;">
+                        <td class="td11" id="TBL-18-2-1" style="text-align:left;">
+                           <p>
+                           </p>
+                        </td>
+                     </tr>
+                  </table>
+               </div>
+               <p>
+                  Given an image represented by an NxN matrix, where each pixel in the image is 4 bytes, write a method to rotate the
+image by 90 degrees. Can you do this in place?
+               </p>
+               <div class="panel-group" id="accordion11">
+                  <div class="panel panel-default">
+                     <a class="accordion-toggle" data-parent="#accordion11" data-toggle="collapse" href="#collapse11">
+                        <div class="panel-heading">
+                           <h4 class="panel-title">
+                              <span style="font-size:15px;color:#FE2E2E">
+                                 View Code
+                              </span>
+                              <span class="pull-right clickable">
+                                 <i class="glyphicon glyphicon-chevron-up">
+                                 </i>
+                              </span>
+                           </h4>
+                        </div>
+                     </a>
+                     <div class="panel-collapse collapse" id="collapse11">
+                        <div class="panel-body">
+                           <pre class="prettyprint"> 
+<br/> <div class="caption"><span class="id">: </span><span class="content">Exercise E-1.6</span></div><!--tex4ht:label?: x1-210001 --><!--l. 7--><pre class="listings"> <br/><span class="label"><a id="x1-21001r1"></a></span>#ifndef __GAYLE_CH01_EX16_HPP__ <br/><span class="label"><a id="x1-21002r2"></a></span>#define __GAYLE_CH01_EX16_HPP__ <br/><span class="label"><a id="x1-21003r3"></a></span> <br/><span class="label"><a id="x1-21004r4"></a></span>#include &lt;vector&gt; <br/><span class="label"><a id="x1-21005r5"></a></span> <br/><span class="label"><a id="x1-21006r6"></a></span>template&lt;class _T&gt; <br/><span class="label"><a id="x1-21007r7"></a></span>class CW { <br/><span class="label"><a id="x1-21008r8"></a></span>public: <br/><span class="label"><a id="x1-21009r9"></a></span>  void rotate(_T &amp;upperLCorner, _T &amp;upperRCorner, _T &amp;lowerLCorner, _T &amp;lowerRCorner){ <br/><span class="label"><a id="x1-21010r10"></a></span>    _T temp = upperLCorner; <br/><span class="label"><a id="x1-21011r11"></a></span>    upperLCorner = lowerLCorner; <br/><span class="label"><a id="x1-21012r12"></a></span>    lowerLCorner = lowerRCorner; <br/><span class="label"><a id="x1-21013r13"></a></span>    lowerRCorner = upperRCorner; <br/><span class="label"><a id="x1-21014r14"></a></span>    upperRCorner = temp; <br/><span class="label"><a id="x1-21015r15"></a></span>  } <br/><span class="label"><a id="x1-21016r16"></a></span>}; <br/><span class="label"><a id="x1-21017r17"></a></span> <br/><span class="label"><a id="x1-21018r18"></a></span>template&lt;class _T&gt; <br/><span class="label"><a id="x1-21019r19"></a></span>class CCW { <br/><span class="label"><a id="x1-21020r20"></a></span>public: <br/><span class="label"><a id="x1-21021r21"></a></span>  void rotate(_T &amp;upperLCorner, _T &amp;upperRCorner, _T &amp;lowerLCorner, _T &amp;lowerRCorner){ <br/><span class="label"><a id="x1-21022r22"></a></span>    _T temp = upperLCorner; <br/><span class="label"><a id="x1-21023r23"></a></span>    upperLCorner = upperRCorner; <br/><span class="label"><a id="x1-21024r24"></a></span>    upperRCorner = lowerRCorner; <br/><span class="label"><a id="x1-21025r25"></a></span>    lowerRCorner = lowerLCorner; <br/><span class="label"><a id="x1-21026r26"></a></span>    lowerLCorner = temp; <br/><span class="label"><a id="x1-21027r27"></a></span>  } <br/><span class="label"><a id="x1-21028r28"></a></span>}; <br/><span class="label"><a id="x1-21029r29"></a></span> <br/><span class="label"><a id="x1-21030r30"></a></span><!--l. 30--><span class="listings-nested">/*! Given an image represented by an NxN matrix, where each pixel in the image is <br/><span class="label"><a id="x1-21031r31"></a></span> *  4 bytes, write a method to rotate the image by 90 degrees. IN PLACE <br/><span class="label"><a id="x1-21032r32"></a></span> */</span> <br/><span class="label"><a id="x1-21033r33"></a></span>template&lt;template&lt;typename&gt; class DirectionPolicy, class _Type&gt; <br/><span class="label"><a id="x1-21034r34"></a></span>class Rotate { <br/><span class="label"><a id="x1-21035r35"></a></span>  DirectionPolicy&lt;_Type&gt; direction; <br/><span class="label"><a id="x1-21036r36"></a></span>public: <br/><span class="label"><a id="x1-21037r37"></a></span>  Rotate(std::vector&lt;std::vector&lt;_Type&gt; &gt; &amp;squareMatrix){ <br/><span class="label"><a id="x1-21038r38"></a></span>    int n = squareMatrix.size() - 1; <br/><span class="label"><a id="x1-21039r39"></a></span>    int outerEnd = squareMatrix.size() / 2; <br/><span class="label"><a id="x1-21040r40"></a></span>    int innerEnd = (squareMatrix.size() + 1) / 2; <br/><span class="label"><a id="x1-21041r41"></a></span>    for (int i = 0; i != outerEnd; ++i) { <br/><span class="label"><a id="x1-21042r42"></a></span>      for (int j = 0; j != innerEnd; ++j) { <br/><span class="label"><a id="x1-21043r43"></a></span>        direction.rotate(squareMatrix[i][j], squareMatrix[j][n - i], <br/><span class="label"><a id="x1-21044r44"></a></span>          squareMatrix[n - j][i], squareMatrix[n - i][n - j]); <br/><span class="label"><a id="x1-21045r45"></a></span>      } <br/><span class="label"><a id="x1-21046r46"></a></span>    } <br/><span class="label"><a id="x1-21047r47"></a></span>  } <br/><span class="label"><a id="x1-21048r48"></a></span>}; <br/><span class="label"><a id="x1-21049r49"></a></span> <br/><span class="label"><a id="x1-21050r50"></a></span>#endif
+          <br/><span class="label"><a id="x1-21051r51"></a></span></pre>
+         </pre>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="panel-group" id="accordion12">
+                  <div class="panel panel-default">
+                     <a class="accordion-toggle" data-parent="#accordion12" data-toggle="collapse" href="#collapse12">
+                        <div class="panel-heading">
+                           <h4 class="panel-title">
+                              <span style="font-size:15px;color:#FE2E2E">
+                                 View Code
+                              </span>
+                              <span class="pull-right clickable">
+                                 <i class="glyphicon glyphicon-chevron-up">
+                                 </i>
+                              </span>
+                           </h4>
+                        </div>
+                     </a>
+                     <div class="panel-collapse collapse" id="collapse12">
+                        <div class="panel-body">
+                           <pre class="prettyprint"> 
+<br/> <div class="caption"><span class="id">: </span><span class="content">Exercise E-1.6</span></div><!--tex4ht:label?: x1-210001 --><!--l. 9--><pre class="listings"> <br/><span class="label"><a id="x1-21052r1"></a></span>#include <!--l. 1--><span class="listings-nested">”ch01/ex1_6.hpp”</span>
+          <br/><span class="label"><a id="x1-21056r5"></a></span></pre>
+         </pre>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <a id="sssec:ex1_07">
+               </a>
+               <div class="table-responsive">
+                  <table cellpadding="0" cellspacing="0" class="tabular" id="TBL-21">
+                     <colgroup id="TBL-21-1g">
+                        <col id="TBL-21-1">
+                        </col>
+                        <col id="TBL-21-2">
+                        </col>
+                     </colgroup>
+                     <tr id="TBL-21-1-" style="vertical-align:baseline;">
+                        <td class="td11" id="TBL-21-1-1" style="text-align:left;">
+                           <h5 class="subsubsectionHead">
+                              <a id="x1-240001">
+                              </a>
+                              <b>
+                                 E-1.7
+                              </b>
+                           </h5>
+                           <p>
+                           </p>
+                        </td>
+                        <td class="td11" id="TBL-21-1-2" style="text-align:right; white-space:nowrap;">
+                           <a class="btn btn-default pull-right" href="#claudiordgzLogo">
+                              <span class="glyphicon glyphicon-arrow-up">
+                              </span>
+                              Go to Top
+                           </a>
+                        </td>
+                     </tr>
+                     <tr id="TBL-21-2-" style="vertical-align:baseline;">
+                        <td class="td11" id="TBL-21-2-1" style="text-align:left;">
+                           <p>
+                           </p>
+                        </td>
+                     </tr>
+                  </table>
+               </div>
+               <p>
+                  Write an algorithm such that if an element in an MxN matrix is 0, its entire row and column are set to
+0.
+               </p>
+               <div class="panel-group" id="accordion13">
+                  <div class="panel panel-default">
+                     <a class="accordion-toggle" data-parent="#accordion13" data-toggle="collapse" href="#collapse13">
+                        <div class="panel-heading">
+                           <h4 class="panel-title">
+                              <span style="font-size:15px;color:#FE2E2E">
+                                 View Code
+                              </span>
+                              <span class="pull-right clickable">
+                                 <i class="glyphicon glyphicon-chevron-up">
+                                 </i>
+                              </span>
+                           </h4>
+                        </div>
+                     </a>
+                     <div class="panel-collapse collapse" id="collapse13">
+                        <div class="panel-body">
+                           <pre class="prettyprint"> 
+<br/> <div class="caption"><span class="id">: </span><span class="content">Exercise E-1.7</span></div><!--tex4ht:label?: x1-240001 --><!--l. 5--><pre class="listings"> <br/><span class="label"><a id="x1-24001r1"></a></span>#ifndef __GAYLE_CH01_EX17_HPP__ <br/><span class="label"><a id="x1-24002r2"></a></span>#define __GAYLE_CH01_EX17_HPP__ <br/><span class="label"><a id="x1-24003r3"></a></span> <br/><span class="label"><a id="x1-24004r4"></a></span>#include &lt;vector&gt; <br/><span class="label"><a id="x1-24005r5"></a></span>#include &lt;set&gt; <br/><span class="label"><a id="x1-24006r6"></a></span> <br/><span class="label"><a id="x1-24007r7"></a></span><!--l. 7--><span class="listings-nested">/*! @brief Write an algorithm such that if an <br/><span class="label"><a id="x1-24008r8"></a></span> * element in an MxN matrix is 0, its <br/><span class="label"><a id="x1-24009r9"></a></span> * entire row and column are set to 0. */</span> <br/><span class="label"><a id="x1-24010r10"></a></span>class ClearRowsColumns { <br/><span class="label"><a id="x1-24011r11"></a></span>public: <br/><span class="label"><a id="x1-24012r12"></a></span>  ClearRowsColumns(std::vector&lt;std::vector&lt;int&gt; &gt; &amp;rectangularMatrix); <br/><span class="label"><a id="x1-24013r13"></a></span> <br/><span class="label"><a id="x1-24014r14"></a></span>private: <br/><span class="label"><a id="x1-24015r15"></a></span>  void clearCells(std::vector&lt;std::vector&lt;int&gt; &gt; &amp;rectangularMatrix, <br/><span class="label"><a id="x1-24016r16"></a></span>                        std::set&lt;int&gt; const &amp;mostZeros, <br/><span class="label"><a id="x1-24017r17"></a></span>                        std::set&lt;int&gt; const &amp;leastZeros, <br/><span class="label"><a id="x1-24018r18"></a></span>                        std::set&lt;int&gt; const &amp;leastNumbers, int const&amp;N); <br/><span class="label"><a id="x1-24019r19"></a></span>  std::set&lt;int&gt; rowZeros; <br/><span class="label"><a id="x1-24020r20"></a></span>  std::set&lt;int&gt; columnZeros; <br/><span class="label"><a id="x1-24021r21"></a></span>  std::set&lt;int&gt; rowNumbers; <br/><span class="label"><a id="x1-24022r22"></a></span>  std::set&lt;int&gt; columnNumbers; <br/><span class="label"><a id="x1-24023r23"></a></span>}; <br/><span class="label"><a id="x1-24024r24"></a></span> <br/><span class="label"><a id="x1-24025r25"></a></span>#endif
+          <br/><span class="label"><a id="x1-24026r26"></a></span></pre>
+         </pre>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="panel-group" id="accordion14">
+                  <div class="panel panel-default">
+                     <a class="accordion-toggle" data-parent="#accordion14" data-toggle="collapse" href="#collapse14">
+                        <div class="panel-heading">
+                           <h4 class="panel-title">
+                              <span style="font-size:15px;color:#FE2E2E">
+                                 View Code
+                              </span>
+                              <span class="pull-right clickable">
+                                 <i class="glyphicon glyphicon-chevron-up">
+                                 </i>
+                              </span>
+                           </h4>
+                        </div>
+                     </a>
+                     <div class="panel-collapse collapse" id="collapse14">
+                        <div class="panel-body">
+                           <pre class="prettyprint"> 
+<br/> <div class="caption"><span class="id">: </span><span class="content">Exercise E-1.7</span></div><!--tex4ht:label?: x1-240001 --><!--l. 7--><pre class="listings"> <br/><span class="label"><a id="x1-24027r1"></a></span>#include <!--l. 1--><span class="listings-nested">”ch01/ex1_7.hpp”</span> <br/><span class="label"><a id="x1-24028r2"></a></span> <br/><span class="label"><a id="x1-24029r3"></a></span>ClearRowsColumns::ClearRowsColumns(std::vector&lt;std::vector&lt;int&gt; &gt; &amp;rectangularMatrix) { <br/><span class="label"><a id="x1-24030r4"></a></span>  int N = rectangularMatrix[0].size(); <br/><span class="label"><a id="x1-24031r5"></a></span>  for (int i = 0; i != rectangularMatrix.size(); ++i) { <br/><span class="label"><a id="x1-24032r6"></a></span>    for (int j = 0; j != N; ++j) { <br/><span class="label"><a id="x1-24033r7"></a></span>      if (rectangularMatrix[i][j] == 0) { <br/><span class="label"><a id="x1-24034r8"></a></span>        rowZeros.insert(i); <br/><span class="label"><a id="x1-24035r9"></a></span>        columnZeros.insert(j); <br/><span class="label"><a id="x1-24036r10"></a></span>      } <br/><span class="label"><a id="x1-24037r11"></a></span>      else { <br/><span class="label"><a id="x1-24038r12"></a></span>        rowNumbers.insert(i); <br/><span class="label"><a id="x1-24039r13"></a></span>        columnNumbers.insert(j); <br/><span class="label"><a id="x1-24040r14"></a></span>      } <br/><span class="label"><a id="x1-24041r15"></a></span>    } <br/><span class="label"><a id="x1-24042r16"></a></span>  } <br/><span class="label"><a id="x1-24043r17"></a></span>  if (rowZeros.size() &gt;= columnZeros.size()){ <br/><span class="label"><a id="x1-24044r18"></a></span>    for (auto it = rowZeros.begin(); it != rowZeros.end(); ++it) { <br/><span class="label"><a id="x1-24045r19"></a></span>      for (int j = 0; j != N; ++j){ <br/><span class="label"><a id="x1-24046r20"></a></span>        rectangularMatrix[(*it)][j] = 0; <br/><span class="label"><a id="x1-24047r21"></a></span>      } <br/><span class="label"><a id="x1-24048r22"></a></span>    } <br/><span class="label"><a id="x1-24049r23"></a></span>    for (auto it = columnZeros.begin(); it != columnZeros.end(); ++it){ <br/><span class="label"><a id="x1-24050r24"></a></span>      for (auto jt = rowNumbers.begin(); jt != rowNumbers.end(); ++jt) { <br/><span class="label"><a id="x1-24051r25"></a></span>        rectangularMatrix[(*jt)][(*it)] = 0; <br/><span class="label"><a id="x1-24052r26"></a></span>      } <br/><span class="label"><a id="x1-24053r27"></a></span>    } <br/><span class="label"><a id="x1-24054r28"></a></span>  } <br/><span class="label"><a id="x1-24055r29"></a></span>  else { <br/><span class="label"><a id="x1-24056r30"></a></span>    for (auto it = columnZeros.begin(); it != columnZeros.end(); ++it) { <br/><span class="label"><a id="x1-24057r31"></a></span>      for (int j = 0; j != N; ++j){ <br/><span class="label"><a id="x1-24058r32"></a></span>        rectangularMatrix[j][(*it)] = 0; <br/><span class="label"><a id="x1-24059r33"></a></span>      } <br/><span class="label"><a id="x1-24060r34"></a></span>    } <br/><span class="label"><a id="x1-24061r35"></a></span>    for (auto it = rowZeros.begin(); it != rowZeros.end(); ++it){ <br/><span class="label"><a id="x1-24062r36"></a></span>      for (auto jt = columnNumbers.begin(); jt != columnNumbers.end(); ++jt) { <br/><span class="label"><a id="x1-24063r37"></a></span>        rectangularMatrix[(*it)][(*jt)] = 0; <br/><span class="label"><a id="x1-24064r38"></a></span>      } <br/><span class="label"><a id="x1-24065r39"></a></span>    } <br/><span class="label"><a id="x1-24066r40"></a></span>  } <br/><span class="label"><a id="x1-24067r41"></a></span>}
+          <br/><span class="label"><a id="x1-24068r42"></a></span></pre>
+         </pre>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <a id="sssec:ex1_08">
+               </a>
+               <div class="table-responsive">
+                  <table cellpadding="0" cellspacing="0" class="tabular" id="TBL-24">
+                     <colgroup id="TBL-24-1g">
+                        <col id="TBL-24-1">
+                        </col>
+                        <col id="TBL-24-2">
+                        </col>
+                     </colgroup>
+                     <tr id="TBL-24-1-" style="vertical-align:baseline;">
+                        <td class="td11" id="TBL-24-1-1" style="text-align:left;">
+                           <h5 class="subsubsectionHead">
+                              <a id="x1-270001">
+                              </a>
+                              <b>
+                                 E-1.8
+                              </b>
+                           </h5>
+                           <p>
+                           </p>
+                        </td>
+                        <td class="td11" id="TBL-24-1-2" style="text-align:right; white-space:nowrap;">
+                           <a class="btn btn-default pull-right" href="#claudiordgzLogo">
+                              <span class="glyphicon glyphicon-arrow-up">
+                              </span>
+                              Go to Top
+                           </a>
+                        </td>
+                     </tr>
+                     <tr id="TBL-24-2-" style="vertical-align:baseline;">
+                        <td class="td11" id="TBL-24-2-1" style="text-align:left;">
+                           <p>
+                           </p>
+                        </td>
+                     </tr>
+                  </table>
+               </div>
+               <p>
+                  Assume you have a method isSubstring which checks if one word is a substring of another. Given two strings, si and
+s2, write code to check if s2 is a rotation of si using only one call to isSubstring (e.g.,”waterbottle”is a rotation of
+”erbottlewat”
+               </p>
+               <div class="panel-group" id="accordion15">
+                  <div class="panel panel-default">
+                     <a class="accordion-toggle" data-parent="#accordion15" data-toggle="collapse" href="#collapse15">
+                        <div class="panel-heading">
+                           <h4 class="panel-title">
+                              <span style="font-size:15px;color:#FE2E2E">
+                                 View Code
+                              </span>
+                              <span class="pull-right clickable">
+                                 <i class="glyphicon glyphicon-chevron-up">
+                                 </i>
+                              </span>
+                           </h4>
+                        </div>
+                     </a>
+                     <div class="panel-collapse collapse" id="collapse15">
+                        <div class="panel-body">
+                           <pre class="prettyprint"> 
+<br/> <div class="caption"><span class="id">: </span><span class="content">Exercise E-1.8</span></div><!--tex4ht:label?: x1-270001 --><!--l. 5--><pre class="listings"> <br/><span class="label"><a id="x1-27001r1"></a></span>#ifndef __GAYLE_CH01_EX17_HPP__ <br/><span class="label"><a id="x1-27002r2"></a></span>#define __GAYLE_CH01_EX17_HPP__ <br/><span class="label"><a id="x1-27003r3"></a></span> <br/><span class="label"><a id="x1-27004r4"></a></span>#include &lt;string&gt; <br/><span class="label"><a id="x1-27005r5"></a></span> <br/><span class="label"><a id="x1-27006r6"></a></span><!--l. 6--><span class="listings-nested">/*!Assume you have a method isSubstring which checks if one word is a <br/><span class="label"><a id="x1-27007r7"></a></span> * substring of another. Given two strings, si and s2, write code to check if s2 is <br/><span class="label"><a id="x1-27008r8"></a></span> * a rotation of s1 using only one call to isSubstring (e.g.,”waterbottle”is a rota- <br/><span class="label"><a id="x1-27009r9"></a></span> * tion of ”erbottlewat” <br/><span class="label"><a id="x1-27010r10"></a></span>*/</span> <br/><span class="label"><a id="x1-27011r11"></a></span>class IsRotation { <br/><span class="label"><a id="x1-27012r12"></a></span>public: <br/><span class="label"><a id="x1-27013r13"></a></span>  bool check(std::string const &amp;lhs, std::string const &amp;rhs); <br/><span class="label"><a id="x1-27014r14"></a></span>private: <br/><span class="label"><a id="x1-27015r15"></a></span>  bool isSubstring(std::string const &amp;lhs, std::string const &amp;rhs); <br/><span class="label"><a id="x1-27016r16"></a></span>}; <br/><span class="label"><a id="x1-27017r17"></a></span> <br/><span class="label"><a id="x1-27018r18"></a></span>#endif
+          <br/><span class="label"><a id="x1-27019r19"></a></span></pre>
+         </pre>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="panel-group" id="accordion16">
+                  <div class="panel panel-default">
+                     <a class="accordion-toggle" data-parent="#accordion16" data-toggle="collapse" href="#collapse16">
+                        <div class="panel-heading">
+                           <h4 class="panel-title">
+                              <span style="font-size:15px;color:#FE2E2E">
+                                 View Code
+                              </span>
+                              <span class="pull-right clickable">
+                                 <i class="glyphicon glyphicon-chevron-up">
+                                 </i>
+                              </span>
+                           </h4>
+                        </div>
+                     </a>
+                     <div class="panel-collapse collapse" id="collapse16">
+                        <div class="panel-body">
+                           <pre class="prettyprint"> 
+<br/> <div class="caption"><span class="id">: </span><span class="content">Exercise E-1.8</span></div><!--tex4ht:label?: x1-270001 --><!--l. 7--><pre class="listings"> <br/><span class="label"><a id="x1-27020r1"></a></span>#include <!--l. 1--><span class="listings-nested">”ch01/ex1_8.hpp”</span> <br/><span class="label"><a id="x1-27021r2"></a></span> <br/><span class="label"><a id="x1-27022r3"></a></span>bool IsRotation::isSubstring(std::string const &amp;lhs, std::string const &amp;rhs) { <br/><span class="label"><a id="x1-27023r4"></a></span>  return (lhs.find(rhs) != std::string::npos); <br/><span class="label"><a id="x1-27024r5"></a></span>} <br/><span class="label"><a id="x1-27025r6"></a></span> <br/><span class="label"><a id="x1-27026r7"></a></span>bool IsRotation::check(std::string const &amp;lhs, std::string const &amp;rhs){ <br/><span class="label"><a id="x1-27027r8"></a></span>  return (isSubstring(std::string(lhs+lhs), rhs)); <br/><span class="label"><a id="x1-27028r9"></a></span>}
+          <br/><span class="label"><a id="x1-27029r10"></a></span></pre>
+         </pre>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <p>
+                  <script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+                  </script>
+                  <!-- GithubAd -->
+                  <ins class="adsbygoogle" data-ad-client="ca-pub-8374950284869319" data-ad-slot="7397143883" style="display:inline-block;width:320px;height:100px">
+                  </ins>
+                  <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                  </script>
+               </p>
+            </div>
+         </div>
+         <div class="col-md-3">
+            <p>
+               <script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+               </script>
+               <!-- GithubRightAd01 -->
+               <ins class="adsbygoogle" data-ad-client="ca-pub-8374950284869319" data-ad-slot="6939485480" style="display:inline-block;width:300px;height:250px">
+               </ins>
+               <script>
+                  (adsbygoogle = window.adsbygoogle || []).push({});
+               </script>
+            </p>
+            <p>
+               <script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+               </script>
+               <!-- GithubRightAd02 -->
+               <ins class="adsbygoogle" data-ad-client="ca-pub-8374950284869319" data-ad-slot="8416218688" style="display:inline-block;width:300px;height:250px">
+               </ins>
+               <script>
+                  (adsbygoogle = window.adsbygoogle || []).push({});
+               </script>
+            </p>
+            <p>
+               <script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+               </script>
+               <!-- GithubRightAd03 -->
+               <ins class="adsbygoogle" data-ad-client="ca-pub-8374950284869319" data-ad-slot="9892951887" style="display:inline-block;width:300px;height:250px">
+               </ins>
+               <script>
+                  (adsbygoogle = window.adsbygoogle || []).push({});
+               </script>
+            </p>
+            <p>
+               <script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+               </script>
+               <!-- GithubRightAd04 -->
+               <ins class="adsbygoogle" data-ad-client="ca-pub-8374950284869319" data-ad-slot="3846418287" style="display:inline-block;width:300px;height:250px">
+               </ins>
+               <script>
+                  (adsbygoogle = window.adsbygoogle || []).push({});
+               </script>
+            </p>
+            <p>
+               <script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+               </script>
+               <!-- GithubRightPlacedAds -->
+               <ins class="adsbygoogle" data-ad-client="ca-pub-8374950284869319" data-ad-slot="1966059086" style="display:inline-block;width:300px;height:600px">
+               </ins>
+               <script>
+                  (adsbygoogle = window.adsbygoogle || []).push({});
+               </script>
+            </p>
+            <p>
+               <script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+               </script>
+               <!-- GithubRightPlacedAd2 -->
+               <ins class="adsbygoogle" data-ad-client="ca-pub-8374950284869319" data-ad-slot="4221521480" style="display:inline-block;width:300px;height:600px">
+               </ins>
+               <script>
+                  (adsbygoogle = window.adsbygoogle || []).push({});
+               </script>
+            </p>
+         </div>
+      </div>
+      <meta content="http://res.cloudinary.com/www-claudiordgz-com/image/upload/v1393991647/LogoClaudio_320x247_sqrb6r.png" itemprop="image"/>
+      <meta content="Learning an awesome book one chapter of at a time" itemprop="articleBody"/>
+      <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+         <meta content="Claudio RodrÃ­guez" itemprop="name"/>
+      </span>
+      <script src="js/jquery-1.11.1.min.js" type="text/javascript">
+      </script>
+      <script src="js/bootstrap.min.js" type="text/javascript">
+      </script>
+      <script src="js/blog.js" type="text/javascript">
+      </script>
+      <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+      </script>
+      <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js" type="text/javascript">
+      </script>
+   </body>
+</html>
