@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="$(ProjectDir)/../../../include/$(ProjectName)/ex11_1.hpp"><Filter>include</Filter></ClCompile>
+    <ClCompile Include="$(ProjectDir)/../../../include/$(ProjectName)/ex11_2.hpp"><Filter>include</Filter></ClCompile>
+    <ClCompile Include="$(ProjectDir)/../../../include/$(ProjectName)/ex11_3.hpp"><Filter>include</Filter></ClCompile>
+    <ClCompile Include="$(ProjectDir)/../../../include/$(ProjectName)/ex11_4.hpp"><Filter>include</Filter></ClCompile>
+    <ClCompile Include="$(ProjectDir)/../../../include/$(ProjectName)/ex11_5.hpp"><Filter>include</Filter></ClCompile>
+    <ClCompile Include="$(ProjectDir)/../../../include/$(ProjectName)/ex11_6.hpp"><Filter>include</Filter></ClCompile>
+    <ClCompile Include="$(ProjectDir)/../../../include/$(ProjectName)/ex11_7.hpp"><Filter>include</Filter></ClCompile>
+    <ClCompile Include="$(ProjectDir)/../../../include/$(ProjectName)/ex11_8.hpp"><Filter>include</Filter></ClCompile>
+    <ClCompile Include="$(ProjectDir)/../../../src/$(ProjectName)/ex11_1.cpp"><Filter>src</Filter></ClCompile>
+    <ClCompile Include="$(ProjectDir)/../../../src/$(ProjectName)/ex11_2.cpp"><Filter>src</Filter></ClCompile>
+    <ClCompile Include="$(ProjectDir)/../../../src/$(ProjectName)/ex11_3.cpp"><Filter>src</Filter></ClCompile>
+    <ClCompile Include="$(ProjectDir)/../../../src/$(ProjectName)/ex11_4.cpp"><Filter>src</Filter></ClCompile>
+    <ClCompile Include="$(ProjectDir)/../../../src/$(ProjectName)/ex11_5.cpp"><Filter>src</Filter></ClCompile>
+    <ClCompile Include="$(ProjectDir)/../../../src/$(ProjectName)/ex11_6.cpp"><Filter>src</Filter></ClCompile>
+    <ClCompile Include="$(ProjectDir)/../../../src/$(ProjectName)/ex11_7.cpp"><Filter>src</Filter></ClCompile>
+    <ClCompile Include="$(ProjectDir)/../../../src/$(ProjectName)/ex11_8.cpp"><Filter>src</Filter></ClCompile>
+    <ClCompile Include="$(ProjectDir)/../../../src/$(ProjectName)/main.cpp"><Filter>src</Filter></ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{0c28d9c7-994c-4461-b7a2-2d2ff9bdc5ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{e58d8644-dcb5-4cf7-b70e-e55208c44552}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
