@@ -38,6 +38,7 @@ debug
 *.user
 *.userosscache
 *.sln.docstates
+.sconsign.dblite
 
 # Build results
 [Dd]ebug/

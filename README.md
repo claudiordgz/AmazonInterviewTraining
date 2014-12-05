@@ -1,4 +1,4 @@
-AmazonInterviewTraining
-=======================
+Cracking the Coding Interview Exercises
+=============================
 
-Training for Amazon Interview
+Cracking the Coding Interview Exercises

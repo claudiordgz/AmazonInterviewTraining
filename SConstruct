@@ -1,18 +1,17 @@
 # Let's define a common build environment first...
 project_name = 'CPPExpressionParser' 
 project_src = 'src'
-
-buildType='debug'
-include_path=['E:\\Claudio\\VisualStudio\\CrossPlatform\\AmazonInterviewTraining\\include','E:\\Boost_1_55\\include\\boost-1_55']
-libs_path='E:\\Claudio\\VisualStudio\\CrossPlatform\\AmazonInterviewTraining\\build\\{build_type}'.format(build_type=buildType)
-extraLibPaths=['E:\\Boost_1_55\\lib']
-commonLibs=[] 
-commonDefines=['DEBUG']
-commonCFlags=['/MT', "/EHsc",'-O2']
-commonLFlags=["/DEBUG","/INCREMENTAL:NO", "/LTCG", "/SUBSYSTEM:CONSOLE"]
 env = Environment()
 isWindows =  "win" in env['PLATFORM']
 if isWindows:
+  buildType='debug'
+  include_path=['E:\\Claudio\\VisualStudio\\CrossPlatform\\AmazonInterviewTraining\\include','E:\\Boost_1_55\\include\\boost-1_55']
+  libs_path='E:\\Claudio\\VisualStudio\\CrossPlatform\\AmazonInterviewTraining\\build\\{build_type}'.format(build_type=buildType)
+  extraLibPaths=['E:\\Boost_1_55\\lib']
+  commonLibs=[] 
+  commonDefines=['DEBUG']
+  commonCFlags=['/MT', "/EHsc",'-O2']
+  commonLFlags=["/DEBUG","/INCREMENTAL:NO", "/LTCG", "/SUBSYSTEM:CONSOLE"]
   common_env = Environment(MSVC_USE_SCRIPT= "c:\\Program Files (x86)\\Microsoft Visual Studio 12.0\\VC\\bin\\vcvars32.bat")
   common_env['TARGET_ARCH']='x86'
 else: 
