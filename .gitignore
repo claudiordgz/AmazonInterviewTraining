@@ -1,6 +1,7 @@
 debug
 
 .idea
+env
 # Compiled Object files
 *.slo
 *.lo
