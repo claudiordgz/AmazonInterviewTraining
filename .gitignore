@@ -177,6 +177,8 @@ publish/
 
 # Windows Azure Build Output
 csx/
+.cache
+__pycache__
 *.build.csdef
 
 # Windows Store app package directory
